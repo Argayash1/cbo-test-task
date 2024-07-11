@@ -1,4 +1,5 @@
-@import url('../../assets/styles/mixins/section-flex-container');
+@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
 	width: 100%;
@@ -21,6 +22,6 @@
 }
 
 .phone {
-	color: #005958;
-	font-size: 16px;
+	@include main-text-font(16, 600, 1.7, #005958);
+	text-decoration: none;
 }

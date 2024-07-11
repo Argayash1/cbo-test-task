@@ -15,7 +15,7 @@ export const Header = () => {
 			<div className={styles.mainMenuContainer}>
 				<div className={styles.container}>
 					<MainMenu />
-					<CTA path='#' linkText='Календарь программ' />
+					<CTA path='#' linkText='Календарь программ' type='header' />
 				</div>
 			</div>
 		</header>

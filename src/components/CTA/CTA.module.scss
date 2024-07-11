@@ -1,0 +1,16 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	@include main-text-font(18, 500, 1.3, #fff);
+	text-decoration: none;
+	padding: 16px 52px;
+	background-color: #db1515;
+	border-radius: 8px;
+}
+
+.rootTypeHeader {
+	background-color: #0c999c;
+	font-size: 14px;
+	line-height: 1.7;
+	padding: 4px 16px;
+}
