@@ -1,0 +1,26 @@
+@import url('../../assets/styles/mixins/section-flex-container');
+
+.root {
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.container {
+	@include section-flex-container(0, 120, 0);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mainMenuContainer {
+	display: flex;
+	align-items: center;
+	height: 96px;
+	background-color: #045c5e;
+}
+
+.phone {
+	color: #005958;
+	font-size: 16px;
+}

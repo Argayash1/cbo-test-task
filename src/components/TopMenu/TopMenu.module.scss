@@ -1,0 +1,15 @@
+@import url('../../assets/styles/mixins/_main-text-font.scss');
+
+.root {
+	margin-right: 32px;
+	margin-left: auto;
+}
+
+.list {
+	@include main-text-font(14, 500, 1.7, #667085);
+	display: flex;
+	gap: 24px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

@@ -1,5 +1,10 @@
 import React from 'react'
+import { Header } from '../components'
 
 export const Home = () => {
-	return <div></div>
+	return (
+		<div>
+			<Header />
+		</div>
+	)
 }
