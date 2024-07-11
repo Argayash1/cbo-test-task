@@ -1,15 +1,15 @@
 .page {
-	background-color: #fff;
-	color: #000;
-	font-family: 'Manrope', 'Helvetica Neue', 'Arial', sans-serif;
+	color: #000000;
 	font-weight: 400;
-	text-rendering: optimizeLegibility;
+	font-family: 'Manrope', 'Helvetica Neue', 'Arial', sans-serif;
 	font-style: 75;
+	background-color: #ffffff;
+	text-rendering: optimizelegibility;
 }
 
 .content {
-	min-width: 375px;
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	min-width: 375px;
+	min-height: 100vh;
 }
