@@ -1,0 +1,38 @@
+import React from 'react'
+import styles from './Lead.module.scss'
+import author from '../../assets/images/lead-author.png'
+import { BreadCrumbs, CTA } from '../../components'
+import { breadCrumbsItems } from '../../utils/breadCrumbsItems'
+
+export const Lead = () => {
+	return (
+		<section className={styles.root}>
+			<div className={styles.container}>
+				<BreadCrumbs pathNames={breadCrumbsItems} />
+				<div className={styles.dateContainer}>
+					<span className={styles.date}>8-9 декабря 2022</span>
+					<CTA
+						path='https://cbo.ru/'
+						type='lead'
+						linkText='Семинар-практикум'
+					/>
+				</div>
+				<h1 className={styles.title}>
+					Жизнь и смерть вашего бизнеса:{' '}
+					<span className={styles.titleSpan}>
+						стабилизация в условиях санкций
+					</span>
+				</h1>
+				<p className={styles.subtitle}>
+					Куда вести компанию, когда горизонт планирования сужается?
+				</p>
+				<img
+					src={author}
+					alt='Демид Голиков, автор семинара-практикума'
+					className={styles.authorImage}
+				/>
+				<CTA path='#' linkText='Узнать подробнее' />
+			</div>
+		</section>
+	)
+}

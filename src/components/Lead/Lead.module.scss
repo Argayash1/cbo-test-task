@@ -1,0 +1,52 @@
+@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	background-color: rgba(128, 137, 158, 0.12);
+}
+
+.container {
+	@include section-flex-container(0, 0, 0, 120);
+	display: grid;
+	grid-template-columns: 1fr 631px;
+	background-image: url('../../assets/images/lead-background.jpg');
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	overflow: hidden;
+}
+
+.dateContainer {
+	display: flex;
+	align-items: center;
+}
+
+.date {
+	@include main-text-font(20, 600, 1.6, #0c999c);
+	margin-right: 20px;
+}
+
+.title {
+	@include main-text-font(52, 300, 1.19, #101828);
+	// letter-spacing: 2%;
+	margin: 0;
+	padding: 0;
+	max-width: 602px;
+}
+
+.titleSpan {
+	font-weight: 500;
+	color: #0c999c;
+}
+
+.subtitle {
+	@include main-text-font(24, 300, 1.45, #2b3541);
+	margin: 25px 0 40px;
+	padding: 0;
+	max-width: 602px;
+}
+
+.authorImage {
+	grid-column: 2/3;
+	grid-row: 1/6;
+	justify-self: end;
+}

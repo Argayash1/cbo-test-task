@@ -18,6 +18,7 @@ export const CTA = ({
 			href={path}
 			className={clsx(styles.root, {
 				[styles.rootTypeHeader]: type === 'header',
+				[styles.rootTypeLead]: type === 'lead',
 			})}
 		>
 			{linkText}

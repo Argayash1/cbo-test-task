@@ -6,6 +6,9 @@
 	padding: 16px 52px;
 	background-color: #db1515;
 	border-radius: 8px;
+	width: max-content;
+	height: max-content;
+	display: inline-block;
 }
 
 .rootTypeHeader {
@@ -13,4 +16,15 @@
 	font-size: 14px;
 	line-height: 1.7;
 	padding: 4px 16px;
+}
+
+.rootTypeLead {
+	background-color: transparent;
+	color: #0c999c;
+	padding: 0 15px 2px 15px;
+	border: 1.5px solid #0c999c;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.9;
+	border-radius: 5px;
 }

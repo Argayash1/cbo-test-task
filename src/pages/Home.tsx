@@ -1,10 +1,11 @@
 import React from 'react'
-import { Header } from '../components'
+import { Header, Main } from '../components'
 
 export const Home = () => {
 	return (
 		<div>
 			<Header />
+			<Main />
 		</div>
 	)
 }
