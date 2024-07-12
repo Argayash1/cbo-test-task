@@ -1,13 +1,20 @@
 import React from 'react'
 import logo from '../../assets/images/logo.png'
 import styles from './Logo.module.scss'
+import { clsx } from 'clsx'
 
-export const Logo = () => {
+interface ILogoProps {
+	place?: string
+}
+
+export const Logo = ({ place }: ILogoProps) => {
 	return (
 		<img
 			src={logo}
 			alt='Логотип Центра бизнес-образования'
-			className={styles.root}
+			className={clsx(styles.root, {
+				[styles.rootTypeSpeakerCard]: place === 'speakercard',
+			})}
 		/>
 	)
 }

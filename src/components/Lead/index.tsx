@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Lead.module.scss'
 import author from '../../assets/images/lead-author.png'
-import { BreadCrumbs, CTA } from '../../components'
+import { BreadCrumbs, CTA, SpeakerCard } from '../../components'
 import { breadCrumbsItems } from '../../utils/breadCrumbsItems'
 
 export const Lead = () => {
@@ -32,6 +32,7 @@ export const Lead = () => {
 					className={styles.authorImage}
 				/>
 				<CTA path='#' linkText='Узнать подробнее' />
+				<SpeakerCard />
 			</div>
 		</section>
 	)
