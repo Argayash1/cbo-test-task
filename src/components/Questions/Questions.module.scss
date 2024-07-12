@@ -1,0 +1,21 @@
+@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	background-color: #fff;
+}
+
+.container {
+	@include section-flex-container(96, 120, 96);
+}
+
+.title {
+}
+
+.list {
+	list-style: none;
+	display: flex;
+	gap: 30px;
+	margin: 39px 0 0;
+	padding: 0;
+}

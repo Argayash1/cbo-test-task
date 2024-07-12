@@ -1,0 +1,13 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	@include main-text-font(42, 600, 1.35, #2b3541);
+	letter-spacing: -0.84px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.rootPlaceQuestions {
+	color: #0c5b5d;
+}
