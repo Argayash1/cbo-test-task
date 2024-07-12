@@ -1,0 +1,39 @@
+@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	background-color: #004241;
+	border-radius: 30px;
+}
+
+.container {
+	@include section-flex-container(75, 120, 75);
+	height: 594px;
+}
+
+.list {
+	list-style: none;
+	display: flex;
+	gap: 48px;
+	margin: 40px 0 0;
+	padding: 0;
+}
+
+.warningContainer {
+	display: flex;
+	gap: 17px;
+	margin: 50px auto;
+	width: max-content;
+}
+
+.warningIcon {
+	width: 33px;
+	height: 30px;
+	background-image: url('../../assets/images/target-audience-warning-icon.svg');
+}
+
+.warning {
+	@include main-text-font(24, 600, 1.45, #fff);
+	margin: 0;
+	padding: 0;
+}

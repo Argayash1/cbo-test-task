@@ -8,7 +8,7 @@
 	border-radius: 8px;
 	width: max-content;
 	height: max-content;
-	display: inline-block;
+	display: block;
 }
 
 .rootTypeHeader {
@@ -28,4 +28,9 @@
 	line-height: 1.9;
 	letter-spacing: -0.28px;
 	border-radius: 5px;
+}
+
+.rootTypeTargetAudience {
+	margin-left: auto;
+	margin-right: auto;
 }

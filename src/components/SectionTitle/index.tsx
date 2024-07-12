@@ -12,6 +12,7 @@ export const SectionTitle = ({ titleText, place }: ISectionTitle) => {
 		<h2
 			className={clsx(styles.root, {
 				[styles.rootPlaceQuestions]: place === 'questions',
+				[styles.rootPlaceTargetAudience]: place === 'target-audience',
 			})}
 		>
 			{titleText}

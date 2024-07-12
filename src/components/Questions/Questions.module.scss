@@ -1,5 +1,4 @@
 @import '../../assets/styles/mixins/section-flex-container';
-@import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
 	background-color: #fff;
@@ -7,9 +6,6 @@
 
 .container {
 	@include section-flex-container(96, 120, 96);
-}
-
-.title {
 }
 
 .list {
