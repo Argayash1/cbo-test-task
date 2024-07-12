@@ -1,6 +1,7 @@
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
+	width: 380px;
 }
 
 .image {
@@ -11,6 +12,11 @@
 	background-position: center;
 	border-radius: 50%;
 	margin: 0 auto;
+}
+
+.imageTypeThird {
+	width: 60px;
+	height: 60px;
 }
 
 .title {
