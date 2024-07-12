@@ -9,6 +9,7 @@
 	@include section-flex-container(0, 0, 0, 120);
 	display: grid;
 	grid-template-columns: 1fr 631px;
+	grid-template-rows: 196px 43px 211px 110px 187px;
 	background-image: url('../../assets/images/lead-background.jpg');
 	background-repeat: no-repeat;
 	background-position: 100% 0;
@@ -18,16 +19,18 @@
 .dateContainer {
 	display: flex;
 	align-items: center;
+	margin-bottom: 13px;
 }
 
 .date {
 	@include main-text-font(20, 600, 1.6, #0c999c);
 	margin-right: 20px;
+	width: 192px;
 }
 
 .title {
 	@include main-text-font(52, 300, 1.19, #101828);
-	// letter-spacing: 2%;
+	letter-spacing: -1.04px;
 	margin: 0;
 	padding: 0;
 	max-width: 602px;
@@ -40,9 +43,10 @@
 
 .subtitle {
 	@include main-text-font(24, 300, 1.45, #2b3541);
-	margin: 25px 0 40px;
+	letter-spacing: -0.48px;
+	margin: 0;
 	padding: 0;
-	max-width: 602px;
+	max-width: 592px;
 }
 
 .authorImage {
