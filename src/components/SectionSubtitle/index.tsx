@@ -12,6 +12,7 @@ export const SectionSubtitle = ({ text, place }: ISectionSubtitle) => {
 		<p
 			className={clsx(styles.root, {
 				[styles.rootPlaceQuestions]: place === 'questions',
+				[styles.rootPlacePracticeActivity]: place === 'practice-activity',
 			})}
 		>
 			{text}

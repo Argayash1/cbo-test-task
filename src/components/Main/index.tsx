@@ -1,5 +1,10 @@
 import React from 'react'
-import { Lead, Questions, TargetAudience } from '../../components'
+import {
+	Lead,
+	PracticeActivities,
+	Questions,
+	TargetAudience,
+} from '../../components'
 
 export const Main = () => {
 	return (
@@ -7,6 +12,7 @@ export const Main = () => {
 			<Lead />
 			<Questions />
 			<TargetAudience />
+			<PracticeActivities />
 		</main>
 	)
 }

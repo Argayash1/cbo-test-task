@@ -6,13 +6,14 @@
 	position: relative;
 	box-sizing: border-box;
 	padding-left: 30px;
+	padding-top: 31px;
 }
 
 .number {
 	@include main-text-font(115, 500, 0.86, #0c999c);
 	position: absolute;
-	top: -20px;
-	left: -30px;
+	top: 6px;
+	left: -3px;
 	z-index: 0;
 	opacity: 0.5;
 }
@@ -21,7 +22,7 @@
 	@include main-text-font(24, 600, 1.45, #fff);
 	position: relative;
 	z-index: 1;
-	margin: 31px 0 15px;
+	margin: 0 0 15px;
 	padding: 0;
 	letter-spacing: -0.48px;
 }

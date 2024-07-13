@@ -1,0 +1,19 @@
+@import '../../assets/styles/mixins/section-flex-container';
+
+.root {
+	counter-reset: activity;
+}
+
+.container {
+	@include section-flex-container(96, 120, 96);
+}
+
+.list {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	width: max-content;
+}
