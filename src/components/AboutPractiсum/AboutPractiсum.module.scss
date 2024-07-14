@@ -1,0 +1,16 @@
+@import '../../assets/styles/mixins/section-flex-container';
+
+.root {
+}
+
+.container {
+	@include section-flex-container(96, 0, 96, 90);
+}
+
+.cardList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 22px;
+}

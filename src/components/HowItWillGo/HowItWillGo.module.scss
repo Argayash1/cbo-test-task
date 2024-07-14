@@ -1,0 +1,23 @@
+@import '../../assets/styles/mixins/section-flex-container';
+
+.root {
+	background-color: #fff;
+}
+
+.container {
+	@include section-flex-container(0, 0, 96);
+}
+
+.photoList {
+	list-style: none;
+	display: flex;
+	gap: 35px;
+	margin: 0;
+	padding: 0;
+	transform: translateX(-323px);
+}
+
+.photo {
+	width: 672px;
+	height: 401px;
+}

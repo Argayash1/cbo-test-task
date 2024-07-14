@@ -1,5 +1,8 @@
 import React from 'react'
 import {
+	AboutAuthor,
+	AboutPractiсum,
+	HowItWillGo,
 	Lead,
 	PracticeActivities,
 	Questions,
@@ -13,6 +16,9 @@ export const Main = () => {
 			<Questions />
 			<TargetAudience />
 			<PracticeActivities />
+			<HowItWillGo />
+			<AboutAuthor />
+			<AboutPractiсum />
 		</main>
 	)
 }

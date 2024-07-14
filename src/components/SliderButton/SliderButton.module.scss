@@ -1,0 +1,47 @@
+.root {
+	width: 24px;
+	height: 45px;
+	background-color: transparent;
+	background-image: url('../../assets/images/left-arrow\ 1\ \(Traced\).png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: absolute;
+	top: 179px;
+	right: 120px;
+	z-index: 3;
+	transition:
+		visibility 0.4s ease-in-out,
+		opacity 0.4s ease-in-out;
+}
+
+.rootTypeAboutPracticum {
+	position: static;
+	border: 1px solid #e4e7ec;
+	box-sizing: border-box;
+	width: 56px;
+	height: 56px;
+	border-radius: 26px;
+	background-color: #0c999c;
+	background-image: url('../../assets/images/about-practicum-arrow-right.png');
+	background-size: auto;
+	background-position: center;
+
+	&:disabled {
+		background-color: #fff;
+		background-image: url('../../assets/images/about-practicum-arrow-left-disabled.png');
+		transform: rotateY(180deg);
+	}
+}
+
+.rootTypeLeft {
+	transform: rotateY(180deg);
+	left: 226px;
+
+	&:not(:not(.rootTypeAboutPracticum)):disabled {
+		transform: rotateY(0);
+	}
+}

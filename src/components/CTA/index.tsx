@@ -19,7 +19,8 @@ export const CTA = ({
 			className={clsx(styles.root, {
 				[styles.rootTypeHeader]: type === 'header',
 				[styles.rootTypeLead]: type === 'lead',
-				[styles.rootTypeTargetAudience]: type === 'target-audience',
+				[styles.rootTypeCentered]:
+					type === 'target-audience' || type === 'how-it-will-go',
 			})}
 		>
 			{linkText}

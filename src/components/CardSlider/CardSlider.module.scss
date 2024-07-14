@@ -1,0 +1,30 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	margin: 40px 0 50px;
+	position: relative;
+}
+
+.wrapper {
+	max-width: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+
+.buttonList {
+	margin: 51px 0 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 21px;
+}
+
+.slideNumber {
+	@include main-text-font(20, 400, 1.7, #0c999c);
+}
+
+.slideCount {
+	@include main-text-font(20, 400, 1.7, #667085);
+}
