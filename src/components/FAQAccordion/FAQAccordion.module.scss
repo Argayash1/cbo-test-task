@@ -1,0 +1,65 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	width: 992px;
+	margin: 40px auto 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.accordionItem {
+	background-color: rgba(12, 153, 156, 0.1);
+	padding: 17px 30px 0 35px;
+	box-sizing: border-box;
+	min-height: 80px;
+	display: flex;
+	flex-direction: column;
+}
+
+.question {
+	margin: 5px 0 0;
+	padding: 0;
+}
+
+.questionButton {
+	@include main-text-font(24, 600, 1.45, #2b3541);
+
+	background-color: transparent;
+	width: 100%;
+	border: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.buttonIcon {
+	background-color: #fff;
+	background-image: url('../../assets/images/faq-accordion-button-icon.svg');
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	background-position: center;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	transition: transform 0.3s linear;
+}
+
+.buttonIconRotated {
+	transform: rotate(-45deg);
+}
+
+.answer {
+	@include main-text-font(16, 400, 1.5, #2b3541);
+
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	max-width: 851px;
+	transition: height 0.5s ease;
+}

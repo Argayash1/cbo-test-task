@@ -8,6 +8,7 @@ type CardSliderProps = {
 	onSwitchToPrevSlides: () => void
 	children: React.ReactNode
 	switchCount: number
+	sliderCount?: number
 	nextButtonDisabled: boolean
 	type?: string
 	screenWidth?: number
@@ -18,6 +19,7 @@ export const CardSlider = ({
 	onSwitchToPrevSlides,
 	onSwitchToNextSlides,
 	switchCount,
+	sliderCount,
 	nextButtonDisabled,
 	type,
 }: CardSliderProps) => {
@@ -31,7 +33,7 @@ export const CardSlider = ({
 				/>
 			)}
 			<div className={clsx(styles.wrapper)}>{children}</div>
-			{!type && (
+			{type !== 'about-practicum' && (
 				<SliderButton
 					onClick={onSwitchToNextSlides}
 					switchCount={switchCount}
@@ -39,21 +41,23 @@ export const CardSlider = ({
 					type={type}
 				/>
 			)}
-			<div className={styles.buttonList}>
-				<SliderButton
-					onClick={onSwitchToPrevSlides}
-					switchCount={switchCount}
-					type={type}
-				/>
-				<span className={styles.slideNumber}>1</span>/
-				<span className={styles.slideCount}>5</span>
-				<SliderButton
-					onClick={onSwitchToNextSlides}
-					switchCount={switchCount}
-					nextButtonDisabled={nextButtonDisabled}
-					type={type}
-				/>
-			</div>
+			{type === 'about-practicum' && (
+				<div className={styles.buttonList}>
+					<SliderButton
+						onClick={onSwitchToPrevSlides}
+						switchCount={switchCount}
+						type={type}
+					/>
+					<span className={styles.slideNumber}>{switchCount + 1}</span>/
+					<span className={styles.slideCount}>{sliderCount}</span>
+					<SliderButton
+						onClick={onSwitchToNextSlides}
+						switchCount={switchCount}
+						nextButtonDisabled={nextButtonDisabled}
+						type={type}
+					/>
+				</div>
+			)}
 		</div>
 	)
 }

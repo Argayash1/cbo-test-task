@@ -20,6 +20,7 @@ export const AboutPractiсum = () => {
 				<SectionTitle titleText='Что говорят о практикуме?' />
 				<CardSlider
 					switchCount={switchCount}
+					sliderCount={aboutPracticumCards.length}
 					onSwitchToPrevSlides={() => setSwitchCount((prev) => prev - 1)}
 					onSwitchToNextSlides={() => setSwitchCount((prev) => prev + 1)}
 					nextButtonDisabled={nextButtonDisabled}

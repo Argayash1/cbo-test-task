@@ -1,0 +1,9 @@
+@import '../../assets/styles/mixins/section-flex-container';
+
+.root {
+	background-color: #fff;
+}
+
+.container {
+	@include section-flex-container(0, 0, 96, 0);
+}
