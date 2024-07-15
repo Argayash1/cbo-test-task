@@ -3,6 +3,7 @@ import {
 	AboutAuthor,
 	AboutPractiсum,
 	FAQ,
+	Feedback,
 	HowItWillGo,
 	Lead,
 	PracticeActivities,
@@ -21,6 +22,7 @@ export const Main = () => {
 			<AboutAuthor />
 			<AboutPractiсum />
 			<FAQ />
+			<Feedback />
 		</main>
 	)
 }

@@ -1,0 +1,42 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	background-color: #fff;
+	grid-row: 1/4;
+	grid-column: 2/3;
+	width: 295px;
+}
+
+.photo {
+	width: 295px;
+	height: 295px;
+}
+
+.name {
+	@include main-text-font(20, 600, 1.6, #2b3541);
+	margin: 20px 0 4px;
+	padding: 0;
+	text-align: center;
+}
+
+.job {
+	@include main-text-font(16, 400, 1.5, #80899e);
+
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.phone {
+	@include main-text-font(16, 600, 1.5, #2b3541);
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	margin: 16px 0 8px;
+}
+
+.email {
+	@include main-text-font(16, 600, 1.5, #0c999c);
+	display: block;
+	text-align: center;
+}

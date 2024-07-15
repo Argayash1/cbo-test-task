@@ -13,7 +13,10 @@ export const SectionSubtitle = ({ text, place }: ISectionSubtitle) => {
 			className={clsx(styles.root, {
 				[styles.rootPlaceQuestions]: place === 'questions',
 				[styles.rootPlacePracticeActivity]: place === 'practice-activity',
+				[styles.rootTypeTextAlignLeft]:
+					place === 'about-author' || place === 'feedback',
 				[styles.rootPlaceAboutAuthor]: place === 'about-author',
+				[styles.rootPlaceFeedback]: place === 'feedback',
 			})}
 		>
 			{text}
