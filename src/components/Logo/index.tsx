@@ -9,12 +9,14 @@ interface ILogoProps {
 
 export const Logo = ({ place }: ILogoProps) => {
 	return (
-		<img
-			src={logo}
-			alt='Логотип Центра бизнес-образования'
-			className={clsx(styles.root, {
-				[styles.rootTypeSpeakerCard]: place === 'speakercard',
-			})}
-		/>
+		<a href='/'>
+			<img
+				src={logo}
+				alt='Логотип Центра бизнес-образования'
+				className={clsx(styles.root, {
+					[styles.rootTypeSpeakerCard]: place === 'speakercard',
+				})}
+			/>
+		</a>
 	)
 }

@@ -3,6 +3,10 @@
 .root {
 	margin-right: 32px;
 	margin-left: auto;
+
+	@media screen and (max-width: 884px) {
+		display: none;
+	}
 }
 
 .list {
