@@ -9,7 +9,7 @@ export const Header = () => {
 				<Logo />
 				<TopMenu />
 				<a href='tel:8 800 700 1996' className={styles.phone}>
-					8 800 700 1996
+					8&nbsp;800&nbsp;700&nbsp;1996
 				</a>
 				<BurgerButton />
 			</div>

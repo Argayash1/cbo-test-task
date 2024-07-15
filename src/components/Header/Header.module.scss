@@ -47,7 +47,7 @@
 }
 
 .phone {
-	@include main-text-font(16, 600, 1.7, #005958);
+	@include main-text-font(16, 600, 1.5, #005958);
 	text-decoration: none;
 
 	@media screen and (max-width: 884px) {

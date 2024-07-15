@@ -3,14 +3,16 @@
 }
 
 .image {
-	width: 128.11px;
+	width: 128.09px;
 	height: 48px;
 	padding-top: 24px;
 	padding-bottom: 24px;
 
 	@media screen and (max-width: 884px) {
+		width: 128.11px;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		margin-left: 1px;
 	}
 
 	@media screen and (max-width: 560px) {
@@ -18,6 +20,7 @@
 		height: 37.32px;
 		padding-top: 7.11px;
 		padding-bottom: 5.57px;
+		margin-left: 0;
 	}
 }
 
