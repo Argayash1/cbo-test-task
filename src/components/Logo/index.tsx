@@ -9,11 +9,11 @@ interface ILogoProps {
 
 export const Logo = ({ place }: ILogoProps) => {
 	return (
-		<a href='/'>
+		<a href='#top' className={styles.root}>
 			<img
 				src={logo}
 				alt='Логотип Центра бизнес-образования'
-				className={clsx(styles.root, {
+				className={clsx(styles.image, {
 					[styles.rootTypeSpeakerCard]: place === 'speakercard',
 				})}
 			/>
