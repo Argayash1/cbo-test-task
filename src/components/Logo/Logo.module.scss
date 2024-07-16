@@ -37,7 +37,12 @@
 		margin-right: 3px;
 	}
 
-	@media screen and (max-width: 679px) {
+	@media screen and (max-width: 720px) {
+		width: 75px;
+		height: 28px;
+	}
+
+	@media screen and (max-width: 531px) {
 		width: 58px;
 		height: 21px;
 	}

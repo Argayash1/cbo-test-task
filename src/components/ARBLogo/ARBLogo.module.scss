@@ -7,7 +7,12 @@
 		height: 34px;
 	}
 
-	@media screen and (max-width: 679px) {
+	@media screen and (max-width: 720px) {
+		width: 128px;
+		height: 27px;
+	}
+
+	@media screen and (max-width: 531px) {
 		width: 95px;
 		height: 20px;
 	}
