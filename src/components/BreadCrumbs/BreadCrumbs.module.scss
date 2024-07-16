@@ -4,6 +4,10 @@
 	margin-top: 40px;
 	margin-bottom: 132px;
 	width: 100%;
+
+	@media screen and (max-width: 986px) {
+		display: none;
+	}
 }
 
 .list {
@@ -13,10 +17,6 @@
 	margin: 0;
 	padding: 0;
 	display: flex;
-}
-
-.crumb {
-	color: #6b7280;
 }
 
 .crumbSpan {

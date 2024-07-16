@@ -14,7 +14,7 @@ export const Logo = ({ place }: ILogoProps) => {
 				src={logo}
 				alt='Логотип Центра бизнес-образования'
 				className={clsx(styles.image, {
-					[styles.rootTypeSpeakerCard]: place === 'speakercard',
+					[styles.imageTypeSpeakerCard]: place === 'speakercard',
 				})}
 			/>
 		</a>

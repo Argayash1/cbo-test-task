@@ -10,6 +10,15 @@
 	border-radius: 10px;
 	box-sizing: border-box;
 	padding: 39px 14px 22px 14px;
+
+	@media screen and (max-width: 986px) {
+		width: 328px;
+		height: 236px;
+		padding: 30px 22px 29px 25px;
+		bottom: 103px;
+		right: initial;
+		left: 44px;
+	}
 }
 
 .speakerName {
@@ -25,6 +34,11 @@
 	margin: 9px 0 10px 0;
 	padding: 0;
 	letter-spacing: -0.3px;
+
+	@media screen and (max-width: 986px) {
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
 }
 
 .logoContainer {

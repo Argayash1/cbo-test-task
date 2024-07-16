@@ -28,4 +28,12 @@
 	padding: 0;
 	width: 127.54px;
 	margin-top: 2px;
+
+	@media screen and (max-width: 986px) {
+		width: 93px;
+		height: 35px;
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 3px;
+	}
 }

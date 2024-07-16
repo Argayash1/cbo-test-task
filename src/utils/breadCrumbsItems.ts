@@ -1,5 +1,1 @@
-export const breadCrumbsItems = [
-	'Главная',
-	'Все программы',
-	'Управление финансами в условиях кризиса',
-]
+export const breadCrumbsItems = ['Главная', 'Все программы']

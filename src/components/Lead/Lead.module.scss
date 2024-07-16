@@ -3,42 +3,92 @@
 
 .root {
 	background-color: rgba(128, 137, 158, 0.12);
+
+	@media screen and (max-width: 986px) {
+		background-color: rgba(128, 137, 158, 0.22);
+	}
 }
 
 .container {
 	@include section-flex-container(0, 0, 0, 120);
+
 	display: grid;
-	grid-template-columns: 1fr 631px;
-	grid-template-rows: 196px 43px 211px 110px 187px;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: 196px 43px auto 110px 187px;
 	background-image: url('../../assets/images/lead-background.jpg');
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
+	overflow: hidden;
+
+	@media screen and (max-width: 1360px) {
+		padding-left: 70px;
+	}
+
+	@media screen and (max-width: 1243px) {
+		padding-left: 50px;
+	}
+
+	@media screen and (max-width: 1006px) {
+		padding-left: 30px;
+	}
+
+	@media screen and (max-width: 986px) {
+		display: flex;
+		flex-direction: column;
+		padding-top: 90px;
+		background-image: url('../../assets/images/lead-tablet-background.png');
+		background-position: 4% 100%;
+		background-size: 850px 514px;
+	}
+
+	@media screen and (max-width: 560px) {
+		padding-left: 20px;
+	}
 }
 
 .dateContainer {
 	display: flex;
 	align-items: center;
-	margin-bottom: 13px;
+	align-self: flex-start;
+
+	@media screen and (max-width: 986px) {
+		justify-content: center;
+		padding-right: 30px;
+		align-self: center;
+	}
 }
 
 .date {
 	@include main-text-font(20, 600, 1.6, #0c999c);
+
 	margin-right: 20px;
 	width: 192px;
 }
 
 .title {
 	@include main-text-font(52, 300, 1.19, #101828);
+
 	letter-spacing: -1.04px;
 	margin: 0;
 	padding: 0;
 	max-width: 602px;
+
+	@media screen and (max-width: 986px) {
+		margin: 30px auto 25px;
+		padding-right: 13px;
+	}
 }
 
 .titleSpan {
 	font-weight: 500;
 	color: #0c999c;
+}
+
+.titleSpanTypeLast {
+	@media screen and (max-width: 986px) {
+		margin-left: 40px;
+	}
 }
 
 .subtitle {
@@ -47,10 +97,52 @@
 	margin: 0;
 	padding: 0;
 	max-width: 592px;
+	min-height: 70px;
+
+	@media screen and (max-width: 986px) {
+		text-align: center;
+		margin-inline: auto;
+		margin-bottom: 50px;
+		padding-right: 30px;
+	}
 }
 
-.authorImage {
+.imageWrapper {
 	grid-column: 2/3;
 	grid-row: 1/6;
 	justify-self: end;
+	align-self: flex-end;
+	font-size: 0;
+	height: 747px;
+	overflow: hidden;
+
+	@media screen and (max-width: 986px) {
+		height: 569px;
+	}
+}
+
+.authorImage {
+	width: 631px;
+	height: 754px;
+	object-fit: contain;
+	object-position: center;
+	position: relative;
+	bottom: 4px;
+
+	@media screen and (max-width: 1296px) {
+		width: 593px;
+		bottom: -18px;
+	}
+
+	@media screen and (max-width: 1223px) {
+		width: 555px;
+		bottom: -39px;
+	}
+
+	@media screen and (max-width: 986px) {
+		width: 516px;
+		height: 758px;
+		bottom: 63px;
+		right: 1px;
+	}
 }

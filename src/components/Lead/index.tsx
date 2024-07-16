@@ -3,6 +3,7 @@ import styles from './Lead.module.scss'
 import author from '../../assets/images/lead-author.png'
 import { BreadCrumbs, CTA, SpeakerCard } from '../../components'
 import { breadCrumbsItems } from '../../utils/breadCrumbsItems'
+import clsx from 'clsx'
 
 export const Lead = () => {
 	return (
@@ -19,19 +20,23 @@ export const Lead = () => {
 				</div>
 				<h1 className={styles.title}>
 					Жизнь и смерть вашего бизнеса:{' '}
-					<span className={styles.titleSpan}>
-						стабилизация в условиях санкций
+					<span className={styles.titleSpan}>стабилизация</span>{' '}
+					<span className={clsx(styles.titleSpan, styles.titleSpanTypeLast)}>
+						в&nbsp;условиях санкций
 					</span>
 				</h1>
 				<p className={styles.subtitle}>
 					Куда вести компанию, когда горизонт планирования сужается?
 				</p>
-				<img
-					src={author}
-					alt='Демид Голиков, автор семинара-практикума'
-					className={styles.authorImage}
-				/>
 				<CTA path='#' linkText='Узнать подробнее' />
+				<div className={styles.imageWrapper}>
+					<img
+						src={author}
+						alt='Демид Голиков, автор семинара-практикума'
+						className={styles.authorImage}
+						loading='lazy'
+					/>
+				</div>
 				<SpeakerCard />
 			</div>
 		</section>

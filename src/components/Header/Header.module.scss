@@ -18,12 +18,12 @@
 		padding-left: 70px;
 	}
 
-	@media screen and (max-width: 1236px) {
+	@media screen and (max-width: 1243px) {
 		padding-right: 50px;
 		padding-left: 50px;
 	}
 
-	@media screen and (max-width: 884px) {
+	@media screen and (max-width: 1006px) {
 		padding-right: 30px;
 		padding-left: 30px;
 	}
@@ -38,7 +38,7 @@
 .mainMenuContainer {
 	display: flex;
 	align-items: center;
-	height: 64px;
+	min-height: 64px;
 	background-color: #045c5e;
 
 	@media screen and (max-width: 1195px) {
