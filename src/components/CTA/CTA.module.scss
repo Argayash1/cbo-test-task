@@ -17,6 +17,12 @@
 			align-self: center;
 		}
 	}
+
+	@media screen and (max-width: 531px) {
+		&:not(.rootTypeLead) {
+			margin-right: 20px;
+		}
+	}
 }
 
 .rootTypeHeader {

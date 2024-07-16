@@ -11,13 +11,33 @@
 	box-sizing: border-box;
 	padding: 39px 14px 22px 14px;
 
+	@media screen and (max-width: 1296px) {
+		right: 169px;
+	}
+
+	@media screen and (max-width: 1223px) {
+		right: 131px;
+	}
+
 	@media screen and (max-width: 986px) {
 		width: 328px;
 		height: 236px;
 		padding: 30px 22px 29px 25px;
 		bottom: 103px;
 		right: initial;
-		left: 44px;
+		left: -184px;
+	}
+	@media screen and (max-width: 720px) {
+		bottom: 15px;
+		left: -148px;
+	}
+
+	@media screen and (max-width: 679px) {
+		width: 250px;
+		height: 141px;
+		padding: 15px;
+		bottom: 25px;
+		left: 54px;
 	}
 }
 
@@ -26,6 +46,12 @@
 	margin: 0;
 	padding: 0;
 	letter-spacing: -0.58px;
+
+	@media screen and (max-width: 531px) {
+		font-size: 18px;
+		line-height: 1.16;
+		letter-spacing: -0.36px;
+	}
 }
 
 .speakerTitle {
@@ -39,9 +65,22 @@
 		margin-top: 15px;
 		margin-bottom: 20px;
 	}
+
+	@media screen and (max-width: 679px) {
+		margin-top: 8px;
+		margin-bottom: 10px;
+		font-size: 12px;
+		line-height: 1.25;
+		letter-spacing: -0.24px;
+	}
 }
 
 .logoContainer {
 	display: flex;
 	justify-content: space-between;
+
+	@media screen and (max-width: 679px) {
+		justify-content: flex-start;
+		gap: 20px;
+	}
 }

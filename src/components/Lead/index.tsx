@@ -36,8 +36,8 @@ export const Lead = () => {
 						className={styles.authorImage}
 						loading='lazy'
 					/>
+					<SpeakerCard />
 				</div>
-				<SpeakerCard />
 			</div>
 		</section>
 	)

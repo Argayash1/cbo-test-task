@@ -44,26 +44,38 @@
 
 	@media screen and (max-width: 560px) {
 		padding-left: 20px;
+		padding-top: 50px;
 	}
 }
 
 .dateContainer {
 	display: flex;
+	gap: 20px;
 	align-items: center;
 	align-self: flex-start;
+	width: 100%;
 
 	@media screen and (max-width: 986px) {
 		justify-content: center;
 		padding-right: 30px;
 		align-self: center;
 	}
+
+	@media screen and (max-width: 531px) {
+		flex-direction: column-reverse;
+		gap: 10px;
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
 }
 
 .date {
 	@include main-text-font(20, 600, 1.6, #0c999c);
 
-	margin-right: 20px;
-	width: 192px;
+	@media screen and (max-width: 531px) {
+		font-size: 18px;
+		line-height: 1;
+	}
 }
 
 .title {
@@ -75,19 +87,41 @@
 	max-width: 602px;
 
 	@media screen and (max-width: 986px) {
-		margin: 30px auto 25px;
 		padding-right: 13px;
+		margin: 30px auto 25px;
+	}
+
+	@media screen and (max-width: 623px) {
+		padding-right: 20px;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 32px;
+		line-height: 1.25;
+		max-width: 483px;
+		margin-top: 20px;
+		letter-spacing: -0.64px;
 	}
 }
 
 .titleSpan {
+	margin: 0;
 	font-weight: 500;
 	color: #0c999c;
+
+	@media screen and (max-width: 531px) {
+		margin-right: 9px;
+	}
 }
 
 .titleSpanTypeLast {
 	@media screen and (max-width: 986px) {
 		margin-left: 40px;
+	}
+
+	@media screen and (max-width: 623px) {
+		margin-left: 0;
 	}
 }
 
@@ -105,6 +139,15 @@
 		margin-bottom: 50px;
 		padding-right: 30px;
 	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 20px;
+		line-height: 1.3;
+		letter-spacing: -0.4px;
+		padding-right: 20px;
+		margin-bottom: 40px;
+		min-height: 52px;
+	}
 }
 
 .imageWrapper {
@@ -114,10 +157,14 @@
 	align-self: flex-end;
 	font-size: 0;
 	height: 747px;
-	overflow: hidden;
+	position: relative;
 
 	@media screen and (max-width: 986px) {
 		height: 569px;
+	}
+
+	@media screen and (max-width: 531px) {
+		height: 439px;
 	}
 }
 
@@ -143,6 +190,12 @@
 		width: 516px;
 		height: 758px;
 		bottom: 63px;
-		right: 1px;
+	}
+
+	@media screen and (max-width: 531px) {
+		width: 347px;
+		height: 510px;
+		bottom: 31px;
+		right: 0;
 	}
 }

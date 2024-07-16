@@ -36,4 +36,9 @@
 		margin-left: 0;
 		margin-right: 3px;
 	}
+
+	@media screen and (max-width: 679px) {
+		width: 58px;
+		height: 21px;
+	}
 }
