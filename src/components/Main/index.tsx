@@ -15,14 +15,14 @@ export const Main = () => {
 	return (
 		<main>
 			<Lead />
-			{/* <Questions />
-			<TargetAudience />
-			<PracticeActivities />
-			<HowItWillGo />
-			<AboutAuthor />
-			<AboutPractiсum />
-			<FAQ />
-			<Feedback /> */}
+			<Questions />
+			{/* <TargetAudience /> */}
+			{/* <PracticeActivities /> */}
+			{/* <HowItWillGo /> */}
+			{/* <AboutAuthor /> */}
+			{/* <AboutPractiсum /> */}
+			{/* <FAQ /> */}
+			{/* <Feedback /> */}
 		</main>
 	)
 }

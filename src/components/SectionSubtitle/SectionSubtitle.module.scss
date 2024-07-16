@@ -3,9 +3,17 @@
 .root {
 	@include main-text-font(24, 500, 1.45, #667085);
 	text-align: center;
-	letter-spacing: -0.24px;
+	letter-spacing: -0.48px;
 	margin: 20px 0 0;
 	padding: 0;
+	min-height: 35px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 18px;
+		line-height: 1.44;
+		letter-spacing: normal;
+		min-height: 26px;
+	}
 }
 
 .rootPlaceQuestions {
