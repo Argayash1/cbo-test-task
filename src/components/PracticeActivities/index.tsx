@@ -22,9 +22,12 @@ export const PracticeActivities = () => {
 	return (
 		<section className={styles.root}>
 			<div className={styles.container}>
-				<SectionTitle titleText='Что будем делать на практикуме?' />
+				<SectionTitle
+					titleText='Что будем делать на практикуме?'
+					place='practice-activities'
+				/>
 				<SectionSubtitle
-					text='В основе программы — стратегический инструментарий АРБ Про:        PIL-подход, карта рынка, матрица обновления «продукт – клиент»'
+					text='В основе программы — стратегический инструментарий АРБ Про: *PIL-подход, карта рынка, матрица обновления «продукт – клиент»'
 					place='practice-activity'
 				/>
 				<ul className={styles.list}>{activitiesListItems}</ul>

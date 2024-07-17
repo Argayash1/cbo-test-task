@@ -27,7 +27,11 @@ export const AboutAuthor = () => {
 				/>
 				<h3>Компетенции:</h3>
 				<ul className={styles.competencies}>{competenciesListItems}</ul>
-				<img src={authorsPhoto} alt='' className={styles.authorPhoto} />
+				<img
+					src={authorsPhoto}
+					alt='Фото Демида Голикова - автора семинара-практикума'
+					className={styles.authorPhoto}
+				/>
 			</div>
 		</section>
 	)

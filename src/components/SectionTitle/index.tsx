@@ -16,6 +16,7 @@ export const SectionTitle = ({ titleText, place }: ISectionTitle) => {
 				[styles.rootTypeTextAlignLeft]:
 					place === 'about-author' || place === 'feedback',
 				[styles.rootPlaceAboutAuthor]: place === 'about-author',
+				[styles.rootPlacePracticeActivities]: place === 'practice-activities',
 			})}
 		>
 			{titleText}

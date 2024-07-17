@@ -67,7 +67,9 @@ export const ActivityCard = ({
 			{summaryList && (
 				<ul className={styles.summaryList}>{summaryListItems}</ul>
 			)}
-			{!subtitle && <CTA path='#' linkText='Скачать программу' />}
+			{!subtitle && (
+				<CTA path='#' linkText='Скачать программу' type='practice-activity' />
+			)}
 			{subtitle && (
 				<div
 					className={clsx(styles.icon, {

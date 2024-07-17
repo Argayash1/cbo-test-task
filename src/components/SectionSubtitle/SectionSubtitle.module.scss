@@ -30,7 +30,8 @@
 .rootPlacePracticeActivity {
 	max-width: 872px;
 	margin: 25px auto 40px;
-	white-space: pre-wrap;
+	font-weight: 600;
+	padding-right: 4px;
 }
 
 .rootTypeTextAlignLeft {
@@ -45,4 +46,8 @@
 
 .rootPlaceFeedback {
 	margin-top: 10px;
+}
+
+.spanNoWrap {
+	white-space: nowrap;
 }

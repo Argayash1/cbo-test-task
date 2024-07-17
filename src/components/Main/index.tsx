@@ -17,7 +17,7 @@ export const Main = () => {
 			<Lead />
 			<Questions />
 			<TargetAudience />
-			{/* <PracticeActivities /> */}
+			<PracticeActivities />
 			{/* <HowItWillGo /> */}
 			{/* <AboutAuthor /> */}
 			{/* <AboutPractiсum /> */}

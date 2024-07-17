@@ -22,6 +22,7 @@ export const CTA = ({
 				[styles.rootTypeCentered]:
 					type === 'target-audience' || type === 'how-it-will-go',
 				[styles.rootTypeTargetAudience]: type === 'target-audience',
+				[styles.rootTypePracticeactivity]: type === 'practice-activity',
 			})}
 		>
 			{linkText}

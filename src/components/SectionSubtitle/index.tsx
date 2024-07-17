@@ -8,6 +8,16 @@ interface ISectionSubtitle {
 }
 
 export const SectionSubtitle = ({ text, place }: ISectionSubtitle) => {
+	const textContent = text.split(' ').map((word, index) =>
+		word.startsWith('*') ? (
+			<span key={index} className={styles.spanNoWrap}>
+				{word.replace('*', '') + ' '}
+			</span>
+		) : (
+			word + ' '
+		)
+	)
+
 	return (
 		<p
 			className={clsx(styles.root, {
@@ -19,7 +29,7 @@ export const SectionSubtitle = ({ text, place }: ISectionSubtitle) => {
 				[styles.rootPlaceFeedback]: place === 'feedback',
 			})}
 		>
-			{text}
+			{textContent}
 		</p>
 	)
 }
