@@ -2,6 +2,7 @@ import React from 'react'
 import { CTA } from '../../components'
 import styles from './ActivityCard.module.scss'
 import { clsx } from 'clsx'
+import useResize from '../../hooks/useResize'
 
 interface ActivityCardProps {
 	title: string
@@ -20,6 +21,8 @@ export const ActivityCard = ({
 	summaryList,
 	icon,
 }: ActivityCardProps) => {
+	const screenWidth = useResize()
+
 	const ideasListItems = ideasList?.map((idea, index) => (
 		<li key={index} className={styles.ideasListItem}>
 			{idea}
@@ -46,12 +49,24 @@ export const ActivityCard = ({
 	const isThirdCard = title.startsWith('Брейншторм')
 	const isSecondCard = title.startsWith('Что')
 
+	const subtitleWithNonBreakingSpace = subtitle
+		?.split(' ')
+		.map((word) => (word.startsWith('*') ? word + '\u00A0' : word + ' '))
+		.join('')
+
+	const subtitleTextContent =
+		isThirdCard && screenWidth <= 986 ? subtitleWithNonBreakingSpace : subtitle
+
+	function replaceStar(text: string): string {
+		return text.replace(/\*/g, '')
+	}
+
 	return (
 		<article
 			className={clsx(styles.root, {
+				[styles.rootTypeSecond]: isSecondCard,
 				[styles.rootTypeThird]: isThirdCard,
 				[styles.rootTypeFourth]: !subtitle,
-				[styles.rootTypeMiddle]: isSecondCard || isThirdCard,
 			})}
 		>
 			<h3
@@ -61,7 +76,11 @@ export const ActivityCard = ({
 			>
 				{title}
 			</h3>
-			{subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+			{subtitle && (
+				<p className={styles.subtitle}>
+					{subtitleTextContent && replaceStar(subtitleTextContent)}
+				</p>
+			)}
 			{ideasList && <ul className={styles.ideasList}>{ideasListItems}</ul>}
 			{addition && <p className={styles.addition}>{additionContent}</p>}
 			{summaryList && (

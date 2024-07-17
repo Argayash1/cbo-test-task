@@ -14,7 +14,7 @@ const activityCardIcons = [
 
 export const PracticeActivities = () => {
 	const activitiesListItems = activityCardItems.map((activityCard, index) => (
-		<li key={index}>
+		<li key={index} className={styles.listItem}>
 			<ActivityCard {...activityCard} icon={activityCardIcons[index]} />
 		</li>
 	))

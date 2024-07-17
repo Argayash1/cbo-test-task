@@ -32,6 +32,11 @@
 	margin: 25px auto 40px;
 	font-weight: 600;
 	padding-right: 4px;
+
+	@media screen and (max-width: 986px) {
+		margin-top: 20px;
+		padding-right: 3px;
+	}
 }
 
 .rootTypeTextAlignLeft {

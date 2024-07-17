@@ -53,6 +53,10 @@
 	margin-inline: auto;
 	text-align: center;
 	padding-right: 11px;
+
+	@media screen and (max-width: 986px) {
+		padding-right: 7px;
+	}
 }
 
 .rootTypeTextAlignLeft {
