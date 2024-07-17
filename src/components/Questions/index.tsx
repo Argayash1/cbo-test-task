@@ -29,7 +29,7 @@ export const Questions = () => {
 					titleText='2022 - рекордный по&nbsp;количеству форс-мажоров'
 					place='questions'
 				/>
-				<SectionSubtitle text='В этих условиях бизнесу важно отвечать на вопросы:' />
+				<SectionSubtitle text='В этих условиях бизнесу важно отвечать на&nbsp;вопросы:' />
 				<ul className={styles.list}>{questionsListItems}</ul>
 			</div>
 		</section>

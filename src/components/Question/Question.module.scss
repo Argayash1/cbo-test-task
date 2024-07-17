@@ -11,6 +11,11 @@
 		width: 100%;
 		gap: 20px;
 	}
+
+	@media screen and (max-width: 531px) {
+		max-width: 336px;
+		margin: 0 auto;
+	}
 }
 
 .image {
@@ -26,6 +31,10 @@
 		width: 50px;
 		height: 50px;
 		margin-left: 3px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-left: 0;
 	}
 }
 
@@ -51,5 +60,12 @@
 	@media screen and (max-width: 986px) {
 		font-size: 16px;
 		line-height: 1.43;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 18px;
+		line-height: 1.38;
+		min-height: 50px;
+		letter-spacing: -0.36px;
 	}
 }

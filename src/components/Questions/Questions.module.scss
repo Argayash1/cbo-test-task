@@ -20,6 +20,10 @@
 	@media screen and (max-width: 1006px) {
 		padding: 80px 30px;
 	}
+
+	@media screen and (max-width: 560px) {
+		padding: 70px 19px 70px 20px;
+	}
 }
 
 .list {
@@ -32,11 +36,21 @@
 	@media screen and (max-width: 986px) {
 		gap: 20px;
 	}
+
+	@media screen and (max-width: 531px) {
+		flex-direction: column;
+		gap: 30px;
+		margin-top: 30px;
+	}
 }
 
 .listItem {
 	@media screen and (max-width: 986px) {
 		width: 31.83%;
+	}
+
+	@media screen and (max-width: 531px) {
+		width: 100%;
 	}
 }
 
@@ -44,10 +58,16 @@
 	@media screen and (max-width: 986px) {
 		width: 31.39%;
 	}
+	@media screen and (max-width: 531px) {
+		width: 100%;
+	}
 }
 
 .listItemTypeThird {
 	@media screen and (max-width: 986px) {
 		width: 30.22%;
+	}
+	@media screen and (max-width: 531px) {
+		width: 100%;
 	}
 }

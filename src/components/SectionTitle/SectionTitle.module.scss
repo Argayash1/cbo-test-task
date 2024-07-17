@@ -19,6 +19,17 @@
 		letter-spacing: -0.7px;
 		max-width: 561px;
 	}
+
+	@media screen and (max-width: 571px) {
+		max-width: 355px;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 25px;
+		line-height: 1.28;
+		letter-spacing: -0.5px;
+		max-width: 253px;
+	}
 }
 
 .rootPlaceQuestions {
