@@ -2,13 +2,45 @@
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
-	background-color: #004241;
-	border-radius: 30px;
+	background-color: #fff;
+
+	@media screen and (max-width: 986px) {
+		box-sizing: border-box;
+		padding-left: 31px;
+		padding-right: 30px;
+	}
+
+	@media screen and (max-width: 531px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .container {
 	@include section-flex-container(75, 120, 75);
-	height: 594px;
+	min-height: 594px;
+	font-size: 0;
+	background-color: #004241;
+	border-radius: 30px;
+
+	@media screen and (max-width: 1360px) {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	@media screen and (max-width: 1243px) {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	@media screen and (max-width: 1006px) {
+		padding: 50px 40px;
+		border-radius: 15px;
+	}
+
+	@media screen and (max-width: 560px) {
+		padding: 40px 20px 40px 16px;
+	}
 }
 
 .list {
@@ -18,19 +50,53 @@
 	margin: 40px 0 0;
 	padding: 0;
 	font-size: 0;
+
+	@media screen and (max-width: 986px) {
+		flex-direction: column;
+		gap: 30px;
+		margin-top: 20px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 15px;
+	}
 }
 
 .warningContainer {
 	display: flex;
+	justify-content: center;
 	gap: 17px;
-	margin: 50px auto;
-	width: max-content;
+	margin: 50px 0 48px;
+
+	@media screen and (max-width: 986px) {
+		margin-top: 41px;
+		margin-bottom: 41px;
+		gap: 15px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 30px;
+		margin-bottom: 31px;
+		margin-left: 4px;
+	}
 }
 
 .warningIcon {
 	width: 33px;
 	height: 30px;
 	background-image: url('../../assets/images/target-audience-warning-icon.svg');
+	background-size: contain;
+	flex-shrink: 0;
+
+	@media screen and (max-width: 986px) {
+		width: 28px;
+		height: 25px;
+		margin-top: 5px;
+	}
+
+	@media screen and (max-width: 531px) {
+		width: 27px;
+	}
 }
 
 .warning {
@@ -38,4 +104,17 @@
 	margin: 0;
 	padding: 0;
 	letter-spacing: -0.48px;
+	min-height: 35px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 21px;
+		line-height: 1.42;
+		letter-spacing: -0.42px;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 18px;
+		line-height: 1.38;
+		letter-spacing: -0.36px;
+	}
 }

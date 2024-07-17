@@ -18,10 +18,13 @@
 		line-height: 1.42;
 		letter-spacing: -0.7px;
 		max-width: 561px;
+		min-height: 50px;
 	}
 
 	@media screen and (max-width: 571px) {
-		max-width: 355px;
+		&:not(.rootPlaceTargetAudience) {
+			max-width: 355px;
+		}
 	}
 
 	@media screen and (max-width: 531px) {
@@ -29,6 +32,7 @@
 		line-height: 1.28;
 		letter-spacing: -0.5px;
 		max-width: 253px;
+		min-height: 32px;
 	}
 }
 
@@ -38,6 +42,10 @@
 
 .rootPlaceTargetAudience {
 	color: #fff;
+
+	@media screen and (max-width: 531px) {
+		max-width: none;
+	}
 }
 
 .rootTypeTextAlignLeft {

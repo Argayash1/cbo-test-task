@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './TargetAudienceCard.module.scss'
+import { clsx } from 'clsx'
 
 interface ITargetAudienceCardProps {
 	cardNumber: string
@@ -15,7 +16,13 @@ export const TargetAudienceCard = ({
 	return (
 		<article className={styles.root}>
 			<span className={styles.number}>{cardNumber}</span>
-			<h3 className={styles.title}>{cardTitle}</h3>
+			<h3
+				className={clsx(styles.title, {
+					[styles.titleTypeFirst]: cardNumber === '01',
+				})}
+			>
+				{cardTitle}
+			</h3>
 			<p className={styles.description}>{cardText}</p>
 		</article>
 	)

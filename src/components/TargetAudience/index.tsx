@@ -27,8 +27,8 @@ export const TargetAudience = () => {
 				<div className={styles.warningContainer}>
 					<span className={styles.warningIcon}></span>
 					<p className={styles.warning}>
-						Чтобы получить результат, лучше пройти практикум командой
-						руководителей
+						Чтобы получить результат, лучше пройти практикум
+						командой&nbsp;руководителей
 					</p>
 				</div>
 				<CTA
