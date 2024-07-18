@@ -9,8 +9,10 @@
 	min-height: 57px;
 
 	@media screen and (max-width: 1233px) {
-		max-width: 806px;
-		margin-inline: auto;
+		&:not(.rootPlaceAboutAuthor) {
+			max-width: 806px;
+			margin-inline: auto;
+		}
 	}
 
 	@media screen and (max-width: 986px) {
@@ -82,4 +84,5 @@
 }
 
 .rootPlaceAboutAuthor {
+	height: 57px;
 }

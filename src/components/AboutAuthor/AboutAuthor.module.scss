@@ -10,10 +10,13 @@
 	@include section-flex-container(57, 0, 0, 120);
 
 	display: grid;
-	grid-template-columns: 1fr 623px;
-	grid-template-rows: 93px 87px 163px 60px auto;
-	column-gap: 16px;
-	height: 946px;
+	grid-template-columns: minmax(200px, 681px) minmax(200px, 623px);
+	grid-template-rows: min-content 57px minmax(173px, max-content) 35px minmax(
+			501px,
+			max-content
+		);
+
+	gap: 10px 16px;
 	background-image: url('../../assets/images/about-author-background.jpg');
 	background-repeat: no-repeat;
 	background-position: top right;
@@ -21,16 +24,19 @@
 
 	@media screen and (max-width: 1360px) {
 		padding-left: 70px;
-		padding-right: 70px;
 	}
 
 	@media screen and (max-width: 1243px) {
 		padding-left: 50px;
-		padding-right: 50px;
+		grid-template-rows: min-content 57px minmax(173px, max-content) 35px minmax(
+				567px,
+				max-content
+			);
 	}
 
 	@media screen and (max-width: 1006px) {
-		padding: 80px 30px;
+		padding-top: 80px;
+		padding-left: 30px;
 	}
 
 	@media screen and (max-width: 560px) {
@@ -55,8 +61,8 @@
 .competencies {
 	@include main-text-font(18, 400, 1.5, #2b3541);
 
-	margin: 0 0 0 17px;
-	padding: 0;
+	margin: 15px 0 0 17px;
+	padding: 0 0 20px;
 	list-style: none;
 	display: flex;
 	flex-direction: column;
@@ -86,4 +92,11 @@
 	object-position: top left;
 	grid-row: 1/6;
 	grid-column: 2/3;
+	align-self: flex-end;
+	margin-bottom: 1px;
+
+	@media screen and (max-width: 1243px) {
+		width: 839.25px;
+		height: 953.4px;
+	}
 }
