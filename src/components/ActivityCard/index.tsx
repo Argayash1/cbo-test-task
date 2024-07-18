@@ -47,7 +47,7 @@ export const ActivityCard = ({
 	)
 
 	const isThirdCard = title.startsWith('Брейншторм')
-	const isSecondCard = title.startsWith('Что')
+	const isSecondCard = title.startsWith('Что делать?')
 
 	const subtitleWithNonBreakingSpace = subtitle
 		?.split(' ')

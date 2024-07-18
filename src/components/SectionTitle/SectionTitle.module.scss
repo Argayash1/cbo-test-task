@@ -22,7 +22,7 @@
 	}
 
 	@media screen and (max-width: 571px) {
-		&:not(.rootPlaceTargetAudience) {
+		&:not(.rootPlaceTargetAudience, .rootPlacePracticeActivities) {
 			max-width: 355px;
 		}
 	}
@@ -56,6 +56,12 @@
 
 	@media screen and (max-width: 986px) {
 		padding-right: 7px;
+	}
+
+	@media screen and (max-width: 531px) {
+		padding-right: 0;
+		text-align: left;
+		max-width: 220px;
 	}
 }
 

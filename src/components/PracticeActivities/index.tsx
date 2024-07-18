@@ -23,7 +23,7 @@ export const PracticeActivities = () => {
 		<section className={styles.root}>
 			<div className={styles.container}>
 				<SectionTitle
-					titleText='Что будем делать на практикуме?'
+					titleText='Что будем делать на&nbsp;практикуме?'
 					place='practice-activities'
 				/>
 				<SectionSubtitle

@@ -23,7 +23,7 @@
 	}
 
 	@media screen and (max-width: 560px) {
-		padding: 40px 20px 40px 16px;
+		padding: 70px 20px;
 	}
 }
 
@@ -38,6 +38,10 @@
 
 	@media screen and (max-width: 986px) {
 		gap: 30px;
+	}
+
+	@media screen and (max-width: 531px) {
+		gap: 20px;
 	}
 }
 
