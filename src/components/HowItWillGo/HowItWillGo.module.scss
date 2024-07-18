@@ -5,7 +5,7 @@
 }
 
 .container {
-	@include section-flex-container(0, 0, 96);
+	@include section-flex-container(0, 0, 91);
 
 	@media screen and (max-width: 1006px) {
 		padding-bottom: 80px;

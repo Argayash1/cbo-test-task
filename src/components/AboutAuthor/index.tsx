@@ -25,7 +25,7 @@ export const AboutAuthor = () => {
                     участвует в Глобальном саммите директоров по стратегическому планированию.'
 					place='about-author'
 				/>
-				<h3>Компетенции:</h3>
+				<h3 className={styles.competenciesListTitle}>Компетенции:</h3>
 				<ul className={styles.competencies}>{competenciesListItems}</ul>
 				<img
 					src={authorsPhoto}

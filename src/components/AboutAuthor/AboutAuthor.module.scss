@@ -8,23 +8,48 @@
 
 .container {
 	@include section-flex-container(57, 0, 0, 120);
+
 	display: grid;
 	grid-template-columns: 1fr 623px;
-	grid-template-rows: 70px 87px 163px 60px auto;
+	grid-template-rows: 93px 87px 163px 60px auto;
 	column-gap: 16px;
-	height: 941px;
+	height: 946px;
 	background-image: url('../../assets/images/about-author-background.jpg');
 	background-repeat: no-repeat;
 	background-position: top right;
+	overflow: hidden;
+
+	@media screen and (max-width: 1360px) {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	@media screen and (max-width: 1243px) {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	@media screen and (max-width: 1006px) {
+		padding: 80px 30px;
+	}
+
+	@media screen and (max-width: 560px) {
+		padding: 70px 20px;
+	}
 }
 
 .presentation {
 	@include main-text-font(20, 500, 1.5, #0c5b5d);
 	max-width: 521px;
+	margin: 23px 0 0;
+	padding: 0;
 }
 
-.listTitle {
+.competenciesListTitle {
 	@include main-text-font(24, 600, 1.45, #2b3541);
+	margin: 0;
+	padding: 0;
+	letter-spacing: -0.48px;
 }
 
 .competencies {
@@ -32,7 +57,7 @@
 
 	margin: 0 0 0 17px;
 	padding: 0;
-	list-style-type: none;
+	list-style: none;
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
@@ -46,11 +71,11 @@
 		width: 7px;
 		height: 7px;
 		background-color: #0c999c;
-		transform: rotate(-45deg);
+		transform: rotate(45deg);
 		display: inline-block;
 		position: absolute;
 		top: 10px;
-		left: -20px;
+		left: -17px;
 	}
 }
 
