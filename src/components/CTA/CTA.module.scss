@@ -56,10 +56,11 @@
 .rootTypeCentered {
 	margin-left: auto;
 	margin-right: auto;
-	width: 459px;
 }
 
 .rootTypeTargetAudience {
+	width: 459px;
+
 	@media screen and (max-width: 531px) {
 		width: 335px;
 		height: 80px;
@@ -78,4 +79,8 @@
 		padding-left: 40px;
 		padding-right: 40px;
 	}
+}
+
+.rootTypeHowItWillGo {
+	width: 265px;
 }

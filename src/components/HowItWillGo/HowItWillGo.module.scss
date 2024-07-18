@@ -6,6 +6,14 @@
 
 .container {
 	@include section-flex-container(0, 0, 96);
+
+	@media screen and (max-width: 1006px) {
+		padding-bottom: 80px;
+	}
+
+	@media screen and (max-width: 560px) {
+		padding-bottom: 70px;
+	}
 }
 
 .photoList {
@@ -14,10 +22,32 @@
 	gap: 35px;
 	margin: 0;
 	padding: 0;
-	transform: translateX(-323px);
+	position: absolute;
+	left: 50%;
+	transition: transform 0.3s ease-in-out;
+
+	@media screen and (max-width: 986px) {
+		gap: 30px;
+	}
+
+	@media screen and (max-width: 531px) {
+		gap: 15px;
+	}
 }
 
 .photo {
 	width: 672px;
 	height: 401px;
+	object-fit: cover;
+	border-radius: 15px;
+
+	@media screen and (max-width: 986px) {
+		width: 477px;
+		height: 284px;
+	}
+
+	@media screen and (max-width: 531px) {
+		width: 270px;
+		height: 295px;
+	}
 }

@@ -1,14 +1,34 @@
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
-	margin: 40px 0 50px;
+	margin: 39px 0 50px;
 	position: relative;
+
+	@media screen and (max-width: 986px) {
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 27px;
+		margin-bottom: 30px;
+	}
 }
 
 .wrapper {
 	max-width: 100%;
 	overflow: hidden;
 	margin: 0;
+	position: relative;
+	height: 401px;
+
+	@media screen and (max-width: 986px) {
+		height: 284px;
+	}
+
+	@media screen and (max-width: 531px) {
+		height: 295px;
+	}
 }
 
 .buttonList {
