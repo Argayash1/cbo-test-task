@@ -20,7 +20,7 @@ export const FAQAccordionCard = ({
 
 	const answerRef = React.useRef<HTMLParagraphElement>(null)
 
-	const answerOnTablet =
+	const secondAnswerOnTablet =
 		'Волшебной таблетки, которая точно поможет выжить каждому бизнесу, не будет. Мы разберем множество разных инструментов и изучим, как их применять. Комбинировать и подстраивать эти инструменты под свой бизнес нужно будет самим на практике.'
 
 	return (
@@ -28,6 +28,7 @@ export const FAQAccordionCard = ({
 			<button
 				className={clsx(styles.questionButton, {
 					[styles.questionButtonOpenInTablet]: isOpen && screenWidth <= 986,
+					[styles.questionButtonTypeSecond]: question.startsWith('Почему'),
 				})}
 				onClick={onClick}
 			>
@@ -53,8 +54,10 @@ export const FAQAccordionCard = ({
 				}}
 			>
 				<p className={styles.answer} ref={answerRef}>
-					{screenWidth <= 986 && answer.startsWith('Текущие')
-						? answerOnTablet
+					{screenWidth <= 986 &&
+					screenWidth > 531 &&
+					answer.startsWith('Текущие')
+						? secondAnswerOnTablet
 						: answer}
 				</p>
 			</div>

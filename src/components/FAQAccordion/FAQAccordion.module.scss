@@ -11,4 +11,8 @@
 		gap: 20px;
 		margin-top: 30px;
 	}
+
+	@media screen and (max-width: 531px) {
+		gap: 15px;
+	}
 }
