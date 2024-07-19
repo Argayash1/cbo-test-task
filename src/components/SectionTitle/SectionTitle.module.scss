@@ -12,7 +12,8 @@
 		&:not(
 				.rootPlaceAboutAuthor,
 				.rootPlacePracticeActivities,
-				.rootPlaceAboutPracticum
+				.rootPlaceAboutPracticum,
+				.rootPlaceFaq
 			) {
 			max-width: 806px;
 			margin-inline: auto;
@@ -31,7 +32,8 @@
 		&:not(
 				.rootPlaceTargetAudience,
 				.rootPlacePracticeActivities,
-				.rootPlaceAboutPracticum
+				.rootPlaceAboutPracticum,
+				.rootPlaceFaq
 			) {
 			max-width: 355px;
 		}
@@ -114,7 +116,7 @@
 	padding-right: 102px;
 
 	@media screen and (max-width: 986px) {
-		padding-right: 19px;
+		padding-right: 17px;
 	}
 
 	@media screen and (max-width: 531px) {
@@ -126,4 +128,8 @@
 	max-width: 344px;
 	margin-inline: auto;
 	padding-right: 11px;
+
+	@media screen and (max-width: 986px) {
+		padding-right: 9px;
+	}
 }
