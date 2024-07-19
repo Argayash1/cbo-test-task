@@ -6,7 +6,7 @@ export const FAQ = () => {
 	return (
 		<section className={styles.root}>
 			<div className={styles.container}>
-				<SectionTitle titleText='Частые вопросы' />
+				<SectionTitle titleText='Частые вопросы' place='faq' />
 				<FAQAccordion />
 			</div>
 		</section>

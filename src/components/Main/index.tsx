@@ -21,7 +21,7 @@ export const Main = () => {
 			<HowItWillGo />
 			<AboutAuthor />
 			<AboutPractiсum />
-			{/* <FAQ /> */}
+			<FAQ />
 			{/* <Feedback /> */}
 		</main>
 	)

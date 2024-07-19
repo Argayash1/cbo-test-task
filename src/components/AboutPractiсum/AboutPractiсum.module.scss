@@ -4,7 +4,7 @@
 }
 
 .container {
-	@include section-flex-container(96, 0, 96, 90);
+	@include section-flex-container(96, 0, 94, 90);
 
 	@media screen and (max-width: 1360px) {
 		padding-left: 70px;
