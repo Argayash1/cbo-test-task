@@ -9,7 +9,11 @@
 	min-height: 57px;
 
 	@media screen and (max-width: 1233px) {
-		&:not(.rootPlaceAboutAuthor, .rootPlacePracticeActivities) {
+		&:not(
+				.rootPlaceAboutAuthor,
+				.rootPlacePracticeActivities,
+				.rootPlaceAboutPracticum
+			) {
 			max-width: 806px;
 			margin-inline: auto;
 		}
@@ -24,7 +28,11 @@
 	}
 
 	@media screen and (max-width: 571px) {
-		&:not(.rootPlaceTargetAudience, .rootPlacePracticeActivities) {
+		&:not(
+				.rootPlaceTargetAudience,
+				.rootPlacePracticeActivities,
+				.rootPlaceAboutPracticum
+			) {
 			max-width: 355px;
 		}
 	}
@@ -97,5 +105,19 @@
 	@media screen and (max-width: 531px) {
 		margin-top: 15px;
 		margin-bottom: 30px;
+	}
+}
+
+.rootPlaceAboutPracticum {
+	max-width: 557px;
+	margin-inline: auto;
+	padding-right: 102px;
+
+	@media screen and (max-width: 986px) {
+		padding-right: 19px;
+	}
+
+	@media screen and (max-width: 531px) {
+		padding-right: 7px;
 	}
 }

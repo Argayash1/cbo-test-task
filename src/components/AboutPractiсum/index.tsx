@@ -2,8 +2,10 @@ import React from 'react'
 import styles from './AboutPractiсum.module.scss'
 import { SectionTitle, CardSlider, AboutPracticumCard } from '../../components'
 import { aboutPracticumCards } from '../../utils/aboutPracticumCards'
+import useResize from '../../hooks/useResize'
 
 export const AboutPractiсum = () => {
+	const screenWidth = useResize()
 	const [switchCount, setSwitchCount] = React.useState<number>(0)
 
 	const nextButtonDisabled = switchCount >= 2
@@ -14,10 +16,20 @@ export const AboutPractiсum = () => {
 		</li>
 	))
 
+	const offset =
+		screenWidth > 986
+			? 421
+			: screenWidth <= 986 && screenWidth < 531
+				? 235
+				: 178
+
 	return (
 		<section>
 			<div className={styles.container}>
-				<SectionTitle titleText='Что говорят о практикуме?' />
+				<SectionTitle
+					titleText='Что говорят о&nbsp;практикуме?'
+					place='about-practicum'
+				/>
 				<CardSlider
 					switchCount={switchCount}
 					sliderCount={aboutPracticumCards.length}
@@ -26,7 +38,14 @@ export const AboutPractiсum = () => {
 					nextButtonDisabled={nextButtonDisabled}
 					type='about-practicum'
 				>
-					{<ul className={styles.cardList}>{cardListItems}</ul>}
+					{
+						<ul
+							className={styles.cardList}
+							style={{ transform: `translateX(-${offset * switchCount}px)` }}
+						>
+							{cardListItems}
+						</ul>
+					}
 				</CardSlider>
 			</div>
 		</section>

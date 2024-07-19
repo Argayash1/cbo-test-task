@@ -15,6 +15,20 @@
 	}
 }
 
+.rootTypeAboutPracticum {
+	margin-top: 38px;
+
+	@media screen and (max-width: 986px) {
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
 .wrapper {
 	max-width: 100%;
 	overflow: hidden;
@@ -31,20 +45,61 @@
 	}
 }
 
+.wrapperTypeAboutPracticum {
+	height: auto;
+}
+
 .buttonList {
-	margin: 51px 0 0;
-	padding: 0;
+	margin: 40px auto 0;
+	padding: 0 110px 0 0;
 	list-style: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 21px;
+	width: max-content;
+
+	@media screen and (max-width: 986px) {
+		padding-right: 2px;
+		margin-top: 41px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 20px;
+		padding-right: 1px;
+	}
 }
 
 .slideNumber {
 	@include main-text-font(20, 400, 1.7, #0c999c);
+	margin-right: 10px;
+
+	@media screen and (max-width: 531px) {
+		margin-right: 5px;
+		font-size: 16px;
+		color: #e32121;
+		display: inline-block;
+		width: 10px;
+	}
+}
+
+.counterSlash {
+	@include main-text-font(20, 400, 1.7, #667085);
+
+	@media screen and (max-width: 531px) {
+		font-size: 16px;
+		display: inline-block;
+		width: 8px;
+	}
 }
 
 .slideCount {
 	@include main-text-font(20, 400, 1.7, #667085);
+	margin-left: 10px;
+
+	@media screen and (max-width: 531px) {
+		margin-left: 5px;
+		font-size: 16px;
+		display: inline-block;
+		width: 12px;
+	}
 }

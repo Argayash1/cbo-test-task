@@ -19,11 +19,15 @@
 		opacity 0.4s ease-in-out;
 
 	@media screen and (max-width: 1360px) {
-		right: 4.13%;
+		&:not(.rootTypeAboutPracticum, .rootTypeLeftAboutPracticum) {
+			right: 4.13%;
+		}
 	}
 
 	@media screen and (max-width: 986px) {
-		display: none;
+		&:not(.rootTypeAboutPracticum, .rootTypeLeftAboutPracticum) {
+			display: none;
+		}
 	}
 }
 
@@ -38,11 +42,19 @@
 	background-image: url('../../assets/images/about-practicum-arrow-right.png');
 	background-size: auto;
 	background-position: center;
+	margin-right: 21px;
 
 	&:disabled {
 		background-color: #fff;
 		background-image: url('../../assets/images/about-practicum-arrow-left-disabled.png');
 		transform: rotateY(180deg);
+	}
+
+	@media screen and (max-width: 531px) {
+		width: 40px;
+		height: 40px;
+		margin-right: 20px;
+		background-size: 18px 18px;
 	}
 }
 
@@ -56,5 +68,14 @@
 
 	@media screen and (max-width: 1360px) {
 		left: 7.812%;
+	}
+}
+
+.rootTypeLeftAboutPracticum {
+	margin-right: 0;
+	margin-left: 21px;
+
+	@media screen and (max-width: 531px) {
+		margin-left: 20px;
 	}
 }

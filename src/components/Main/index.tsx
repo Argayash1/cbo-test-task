@@ -20,7 +20,7 @@ export const Main = () => {
 			<PracticeActivities />
 			<HowItWillGo />
 			<AboutAuthor />
-			{/* <AboutPractiсum /> */}
+			<AboutPractiсum />
 			{/* <FAQ /> */}
 			{/* <Feedback /> */}
 		</main>

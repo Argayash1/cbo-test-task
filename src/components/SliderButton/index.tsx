@@ -20,6 +20,8 @@ export const SliderButton = ({
 			className={clsx(styles.root, {
 				[styles.rootTypeLeft]: nextButtonDisabled === undefined,
 				[styles.rootTypeAboutPracticum]: type === 'about-practicum',
+				[styles.rootTypeLeftAboutPracticum]:
+					nextButtonDisabled !== undefined && type === 'about-practicum',
 			})}
 			onClick={onClick}
 			disabled={
