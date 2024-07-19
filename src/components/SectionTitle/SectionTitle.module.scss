@@ -9,7 +9,7 @@
 	min-height: 57px;
 
 	@media screen and (max-width: 1233px) {
-		&:not(.rootPlaceAboutAuthor) {
+		&:not(.rootPlaceAboutAuthor, .rootPlacePracticeActivities) {
 			max-width: 806px;
 			margin-inline: auto;
 		}
@@ -90,5 +90,12 @@
 		margin-top: 5px;
 		margin-bottom: 25px;
 		height: auto;
+		position: relative;
+		z-index: 1;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 15px;
+		margin-bottom: 30px;
 	}
 }

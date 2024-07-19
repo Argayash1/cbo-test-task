@@ -32,7 +32,11 @@ export const AboutAuthor = () => {
 				<h3 className={styles.competenciesListTitle}>Компетенции:</h3>
 				<ul className={styles.competencies}>{competenciesListItems}</ul>
 				<img
-					src={screenWidth > 986 ? authorsPhoto : authorsPhotoTablet}
+					src={
+						screenWidth > 986 || screenWidth <= 531
+							? authorsPhoto
+							: authorsPhotoTablet
+					}
 					alt='Фото Демида Голикова - автора семинара-практикума'
 					className={styles.authorPhoto}
 				/>
