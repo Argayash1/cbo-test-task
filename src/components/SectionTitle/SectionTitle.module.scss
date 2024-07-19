@@ -85,4 +85,10 @@
 
 .rootPlaceAboutAuthor {
 	height: 57px;
+
+	@media screen and (max-width: 986px) {
+		margin-top: 5px;
+		margin-bottom: 25px;
+		height: auto;
+	}
 }

@@ -3,8 +3,12 @@ import styles from './AboutAuthor.module.scss'
 import { SectionTitle, SectionSubtitle } from '../../components'
 import { competenciesItems } from '../../utils/competenciesItems'
 import authorsPhoto from '../../assets/images/about-author-photo.png'
+import authorsPhotoTablet from '../../assets/images/about-author-tablet-photo.png'
+import useResize from '../../hooks/useResize'
 
 export const AboutAuthor = () => {
+	const screenWidth = useResize()
+
 	const competenciesListItems = competenciesItems.map((competence, index) => (
 		<li key={index} className={styles.competence}>
 			{competence}
@@ -28,7 +32,7 @@ export const AboutAuthor = () => {
 				<h3 className={styles.competenciesListTitle}>Компетенции:</h3>
 				<ul className={styles.competencies}>{competenciesListItems}</ul>
 				<img
-					src={authorsPhoto}
+					src={screenWidth > 986 ? authorsPhoto : authorsPhotoTablet}
 					alt='Фото Демида Голикова - автора семинара-практикума'
 					className={styles.authorPhoto}
 				/>
