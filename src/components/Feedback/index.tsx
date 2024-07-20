@@ -21,7 +21,7 @@ export const Feedback = () => {
 					place='feedback'
 				/>
 				<FeedbackForm />
-				<CTA path='#' />
+				<CTA path='#' type='feedback' />
 				<SpecialistCard />
 			</div>
 		</section>

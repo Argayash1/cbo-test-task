@@ -22,7 +22,7 @@ export const Main = () => {
 			<AboutAuthor />
 			<AboutPractiсum />
 			<FAQ />
-			{/* <Feedback /> */}
+			<Feedback />
 		</main>
 	)
 }

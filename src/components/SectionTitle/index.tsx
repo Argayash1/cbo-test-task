@@ -20,6 +20,7 @@ export const SectionTitle = ({ titleText, place }: ISectionTitle) => {
 				[styles.rootPlaceHowWillItGo]: place === 'how-will-it-go',
 				[styles.rootPlaceAboutPracticum]: place === 'about-practicum',
 				[styles.rootPlaceFaq]: place === 'faq',
+				[styles.rootPlaceFeedback]: place === 'feedback',
 			})}
 		>
 			{titleText}

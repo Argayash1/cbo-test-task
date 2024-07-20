@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './SpecialistCard.module.scss'
-import specialistPhoto from '../../assets/images/feedback-specialist-photo.png'
+import specialistPhoto from '../../assets/images/feedback-specialist-photo.jpg'
 
 export const SpecialistCard = () => {
 	return (
@@ -8,6 +8,7 @@ export const SpecialistCard = () => {
 			<img
 				src={specialistPhoto}
 				alt='Фото ведущегшо специалиста Бизнес-школы ЦБО Надежды Шуравиной'
+				className={styles.photo}
 			/>
 			<h3 className={styles.name}>Шуравина Надежда</h3>
 			<p className={styles.job}>Ведущий специалист Бизнес-школы&nbsp;ЦБО</p>

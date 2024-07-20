@@ -4,31 +4,43 @@
 	display: flex;
 	flex-direction: column;
 	width: 505px;
-	margin: 40px 0 32px;
+	margin: 27px 0 32px;
 	padding: 0;
 }
 
 .label {
 	@include main-text-font(20, 500, 1.25);
+	letter-spacing: -0.4px;
 
 	&:not(:first-child) {
+		margin-top: 30.5px;
+	}
+
+	&:nth-child(3) {
 		margin-top: 30px;
 	}
 }
 
 .input {
-	padding-top: 10.5px;
-	padding-bottom: 10px;
+	@include main-text-font(18, 400, 1.38);
+
+	padding: 10px 0 10.5px;
 	outline: none;
 	border-top: none;
 	border-right: none;
 	border-bottom: 1px solid #667085;
 	border-left: none;
+
+	&::placeholder {
+		@include main-text-font(18, 400, 1.38, #667085);
+		letter-spacing: -0.36px;
+	}
 }
 
 .checkboxLabel {
 	@include main-text-font(16, 400, 1.56, #667085);
 	display: flex;
-	gap: 11px;
-	margin-top: 20.5px;
+	gap: 14px;
+	margin-top: 18.5px;
+	letter-spacing: -0.32px;
 }
