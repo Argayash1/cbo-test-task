@@ -34,7 +34,8 @@
 				.rootPlaceTargetAudience,
 				.rootPlacePracticeActivities,
 				.rootPlaceAboutPracticum,
-				.rootPlaceFaq
+				.rootPlaceFaq,
+				.rootPlaceFeedback
 			) {
 			max-width: 355px;
 		}
@@ -148,5 +149,13 @@
 		max-width: 273px;
 		letter-spacing: -0.56px;
 		margin-top: 0;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 25px;
+		line-height: 1.28;
+		letter-spacing: -0.5px;
+		margin-inline: auto;
+		text-align: center;
 	}
 }

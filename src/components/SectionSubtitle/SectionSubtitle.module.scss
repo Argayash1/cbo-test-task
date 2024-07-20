@@ -87,6 +87,14 @@
 		letter-spacing: -0.32px;
 		margin-top: 5px;
 	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 14px;
+		line-height: 1.5;
+		letter-spacing: -0.28px;
+		margin-top: 0;
+		margin-inline: auto;
+	}
 }
 
 .spanNoWrap {

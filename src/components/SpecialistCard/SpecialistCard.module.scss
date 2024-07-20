@@ -8,8 +8,13 @@
 	font-size: 0;
 
 	@media screen and (max-width: 986px) {
-		width: 295px;
+		width: min(100%, 295px);
 		margin-top: 10px;
+		justify-self: flex-end;
+	}
+
+	@media screen and (max-width: 531px) {
+		width: 100%;
 	}
 }
 
@@ -42,6 +47,10 @@
 		margin-bottom: 4px;
 		margin-top: 3px;
 	}
+
+	@media screen and (max-width: 531px) {
+		max-width: none;
+	}
 }
 
 .job {
@@ -54,7 +63,7 @@
 
 	@media screen and (max-width: 986px) {
 		font-size: 14px;
-		line-height: 1.25;
+		line-height: 1.28;
 		margin-left: 0;
 		margin-inline: auto;
 		max-width: 180px;
@@ -76,6 +85,10 @@
 		margin-bottom: 8px;
 		margin-left: 0;
 	}
+
+	@media screen and (max-width: 531px) {
+		max-width: none;
+	}
 }
 
 .email {
@@ -89,5 +102,9 @@
 		font-size: 14px;
 		line-height: 1.71;
 		margin-left: 0;
+	}
+
+	@media screen and (max-width: 531px) {
+		max-width: none;
 	}
 }

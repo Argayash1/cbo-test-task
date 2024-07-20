@@ -25,10 +25,16 @@
 	}
 
 	@media screen and (max-width: 986px) {
-		grid-template-columns: 1fr 295px;
+		grid-template-columns: minmax(258px, 1fr) minmax(207px, 1fr);
 	}
 
 	@media screen and (max-width: 560px) {
 		padding: 70px 20px 70px 20px;
+	}
+
+	@media screen and (max-width: 531px) {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
 	}
 }
