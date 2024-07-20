@@ -13,7 +13,12 @@
 	height: 56px;
 
 	@media screen and (max-width: 986px) {
-		&:not(.rootTypeLead, .rootTypeCentered, .rootTypePracticeactivity) {
+		&:not(
+				.rootTypeLead,
+				.rootTypeCentered,
+				.rootTypePracticeactivity,
+				.rootTypeFeedback
+			) {
 			margin-right: 30px;
 			margin-bottom: 2px;
 			align-self: center;
@@ -90,4 +95,8 @@
 	width: 220px;
 	padding-left: 29.73px;
 	padding-right: 22.65px;
+
+	@media screen and (max-width: 986px) {
+		margin-left: 1px;
+	}
 }

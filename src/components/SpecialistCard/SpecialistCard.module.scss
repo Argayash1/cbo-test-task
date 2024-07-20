@@ -2,10 +2,15 @@
 
 .root {
 	background-color: #fff;
-	grid-row: 1/4;
+	grid-row: 1/6;
 	grid-column: 2/3;
 	width: 315px;
 	font-size: 0;
+
+	@media screen and (max-width: 986px) {
+		width: 295px;
+		margin-top: 10px;
+	}
 }
 
 .photo {
@@ -13,6 +18,14 @@
 	height: 315px;
 	object-fit: contain;
 	object-position: 9px -7px;
+	display: block;
+
+	@media screen and (max-width: 986px) {
+		width: 192px;
+		margin: 0 auto;
+		height: 192px;
+		object-position: -1px -4px;
+	}
 }
 
 .name {
@@ -21,6 +34,14 @@
 	padding: 0;
 	text-align: center;
 	max-width: 295px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 18px;
+		line-height: 1.77;
+		margin-left: 0;
+		margin-bottom: 4px;
+		margin-top: 3px;
+	}
 }
 
 .job {
@@ -30,6 +51,14 @@
 	padding: 0;
 	text-align: center;
 	max-width: 295px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 14px;
+		line-height: 1.25;
+		margin-left: 0;
+		margin-inline: auto;
+		max-width: 180px;
+	}
 }
 
 .phone {
@@ -39,6 +68,14 @@
 	text-align: center;
 	margin: 16px 0 8px 20px;
 	max-width: 295px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 14px;
+		line-height: 1.71;
+		margin-top: 25px;
+		margin-bottom: 8px;
+		margin-left: 0;
+	}
 }
 
 .email {
@@ -47,4 +84,10 @@
 	text-align: center;
 	max-width: 295px;
 	margin-left: 20px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 14px;
+		line-height: 1.71;
+		margin-left: 0;
+	}
 }

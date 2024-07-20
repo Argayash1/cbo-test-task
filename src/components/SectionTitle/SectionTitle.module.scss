@@ -13,7 +13,8 @@
 				.rootPlaceAboutAuthor,
 				.rootPlacePracticeActivities,
 				.rootPlaceAboutPracticum,
-				.rootPlaceFaq
+				.rootPlaceFaq,
+				.rootPlaceFeedback
 			) {
 			max-width: 806px;
 			margin-inline: auto;
@@ -140,5 +141,12 @@
 
 .rootPlaceFeedback {
 	margin-top: 5px;
-	height: 57px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 28px;
+		line-height: 1.39;
+		max-width: 273px;
+		letter-spacing: -0.56px;
+		margin-top: 0;
+	}
 }

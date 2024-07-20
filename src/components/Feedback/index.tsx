@@ -7,8 +7,14 @@ import {
 	FeedbackForm,
 	SpecialistCard,
 } from '../../components'
+import useResize from '../../hooks/useResize'
 
 export const Feedback = () => {
+	const screenWidth = useResize()
+	const subtitleText =
+		screenWidth > 986
+			? 'Пишите нам, мы проконсультируем по всем вопросам.'
+			: 'Я готова вас проконсультировать'
 	return (
 		<section className={styles.root}>
 			<div className={styles.container}>
@@ -16,10 +22,7 @@ export const Feedback = () => {
 					titleText='Хотите уточнить условия участия?'
 					place='feedback'
 				/>
-				<SectionSubtitle
-					text='Пишите нам, мы проконсультируем по всем вопросам.'
-					place='feedback'
-				/>
+				<SectionSubtitle text={subtitleText} place='feedback' />
 				<FeedbackForm />
 				<CTA path='#' type='feedback' />
 				<SpecialistCard />

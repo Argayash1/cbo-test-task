@@ -80,7 +80,13 @@
 	font-size: 22px;
 	line-height: 1.45;
 	letter-spacing: normal;
-	max-height: 32px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 16px;
+		line-height: 1.18;
+		letter-spacing: -0.32px;
+		margin-top: 5px;
+	}
 }
 
 .spanNoWrap {
