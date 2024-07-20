@@ -52,7 +52,7 @@ export const Footer = () => {
 					</div>
 				</div>
 				<div className={styles.infoContainer}>
-					<Logo />
+					<Logo place='footer' />
 					<p className={styles.copyright}>
 						© Группа Компаний «ЦБО» Центр Бизнес-Образования | 1996 — 2022.
 						Копирование любых материалов с сайта запрещено.

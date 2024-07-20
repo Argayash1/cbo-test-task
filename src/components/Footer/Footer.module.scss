@@ -11,12 +11,25 @@
 
 .navContainer {
 	display: flex;
+	justify-content: space-between;
 	gap: 32px;
 }
 
 .columnHeading {
 	@include main-text-font(16, 500, 1.5, #80899e);
 	margin: 0 0 16px;
+}
+
+.columnTypeSecond {
+	// margin-left: 32px;
+	// margin-right: auto;
+}
+
+.columnTypeThird {
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 .cboList {
@@ -49,17 +62,22 @@
 .infoContainer {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-top: 32px;
 	border-top: 1px solid #e5e7eb;
+	padding-top: 33px;
 }
 
 .phone {
 	@include main-text-font(24, 600, 1, #005958);
 	text-decoration: none;
+	display: inline-block;
 }
 
 .callLabel {
 	@include main-text-font(12, 400, 1.3, #80899e);
+	margin: 0;
+	padding: 0;
 }
 
 .socialList {
@@ -81,7 +99,7 @@
 }
 
 .copyright {
-	@include main-text-font(12, 400, 1.3, #80899e);
-
-	align-self: center;
+	@include main-text-font(12, 400, 1.33, #80899e);
+	margin: 0;
+	padding: 0;
 }

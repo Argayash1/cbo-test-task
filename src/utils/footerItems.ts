@@ -1,17 +1,18 @@
-import instagramIcon from '../assets/images/footer-Instagram-icon.svg'
+import igIcon from '../assets/images/footer-Instagram-icon.svg'
 import facebookIcon from '../assets/images/footer-facebook-icon.svg'
 import twitterIcon from '../assets/images/footer-twitter-icon.svg'
 import mediumIcon from '../assets/images/footer-medium-icon.svg'
+import tgIcon from '../assets/images/footer-telegram-icon.svg'
 import youTubeIcon from '../assets/images/footer-youtube-icon.svg'
 
 export const cboItems = [
 	'МБА',
-	'Курсы',
-	'Корпоративное обучение',
-	'Молодежная Бизнес-Лига',
 	'Клуб ЦБО',
+	'Курсы',
 	'Партнерство',
+	'Корпоративное обучение',
 	'О компании',
+	'Молодежная Бизнес-Лига',
 	'Работа в ЦБО',
 ]
 
@@ -23,9 +24,10 @@ export const infoItems = [
 ]
 
 export const socialItems = [
-	{ icon: instagramIcon, link: '#' },
+	{ icon: igIcon, link: '#' },
 	{ icon: facebookIcon, link: '#' },
 	{ icon: twitterIcon, link: '#' },
 	{ icon: mediumIcon, link: '#' },
+	{ icon: tgIcon, link: '#' },
 	{ icon: youTubeIcon, link: '#' },
 ]

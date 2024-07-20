@@ -2,7 +2,8 @@
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
-	background-color: #fff;
+	background-color: #004241;
+	border-radius: 30px;
 
 	@media screen and (max-width: 986px) {
 		box-sizing: border-box;
@@ -20,8 +21,6 @@
 	@include section-flex-container(75, 120, 75);
 	min-height: 594px;
 	font-size: 0;
-	background-color: #004241;
-	border-radius: 30px;
 
 	@media screen and (max-width: 1360px) {
 		padding-left: 70px;
