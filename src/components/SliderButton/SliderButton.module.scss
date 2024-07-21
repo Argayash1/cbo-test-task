@@ -75,6 +75,10 @@
 	margin-right: 0;
 	margin-left: 21px;
 
+	@media screen and (max-width: 986px) {
+		margin-left: 22px;
+	}
+
 	@media screen and (max-width: 531px) {
 		margin-left: 20px;
 	}

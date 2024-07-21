@@ -9,6 +9,8 @@
 		box-sizing: border-box;
 		padding-left: 31px;
 		padding-right: 30px;
+		background-color: #fff;
+		border-radius: 0;
 	}
 
 	@media screen and (max-width: 531px) {
@@ -32,6 +34,11 @@
 
 	@media screen and (max-width: 1006px) {
 		padding: 50px 40px;
+		border-radius: 15px;
+	}
+
+	@media screen and (max-width: 986px) {
+		background-color: #004241;
 		border-radius: 15px;
 	}
 
@@ -67,7 +74,7 @@
 
 	@media screen and (max-width: 986px) {
 		margin-top: 41px;
-		margin-bottom: 41px;
+		margin-bottom: 40px;
 		gap: 15px;
 	}
 

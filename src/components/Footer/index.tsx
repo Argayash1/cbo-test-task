@@ -3,8 +3,19 @@ import styles from './Footer.module.scss'
 import { clsx } from 'clsx'
 import { cboItems, infoItems, socialItems } from '../../utils/footerItems'
 import { Logo } from '../../components'
+import useResize from '../../hooks/useResize'
 
 export const Footer = () => {
+	const screenWidth = useResize()
+
+	const copirightText =
+		' Группа Компаний «ЦБО» Центр Бизнес-Образования | 1996 — 2022. Копирование любых материалов с сайта запрещено.'
+
+	const copirightTextContent =
+		screenWidth > 943 || screenWidth <= 531
+			? copirightText
+			: copirightText.replace(' ', '')
+
 	const cboListItems = cboItems.map((item, index) => (
 		<li key={index} className={styles.listItem}>
 			{item}
@@ -53,10 +64,7 @@ export const Footer = () => {
 				</div>
 				<div className={styles.infoContainer}>
 					<Logo place='footer' />
-					<p className={styles.copyright}>
-						© Группа Компаний «ЦБО» Центр Бизнес-Образования | 1996 — 2022.
-						Копирование любых материалов с сайта запрещено.
-					</p>
+					<p className={styles.copyright}>&copy;{copirightTextContent}</p>
 				</div>
 			</div>
 		</footer>

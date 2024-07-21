@@ -18,6 +18,11 @@
 
 	@media screen and (max-width: 1006px) {
 		padding-inline: 30px;
+		padding-top: 70px;
+	}
+
+	@media screen and (max-width: 560px) {
+		padding: 40px 20px 113px;
 	}
 }
 
@@ -60,10 +65,10 @@
 	}
 
 	@media screen and (max-width: 943px) {
-		width: 529px;
+		width: 527px;
 		display: grid;
 		grid-template-columns: auto auto;
-		column-gap: 40px;
+		column-gap: 38px;
 		align-self: flex-end;
 	}
 
@@ -72,6 +77,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-top: 11px;
 	}
 }
 
@@ -103,16 +109,16 @@
 		grid-row: 3/4;
 	}
 
-	&:nth-child(4) {
+	&:not(.listItemTypeInfo):nth-child(4) {
 		grid-column: 1/2;
 		grid-row: 4/5;
 
 		@media screen and (max-width: 943px) {
-			margin-bottom: 30px;
+			margin-bottom: 34px;
 		}
 
 		@media screen and (max-width: 531px) {
-			margin-bottom: 20px;
+			margin-bottom: 24px;
 		}
 	}
 }
@@ -139,8 +145,17 @@
 	padding-top: 33px;
 
 	@media screen and (max-width: 943px) {
-		display: block;
 		align-items: flex-start;
+		padding-top: 0;
+		border-top: none;
+		margin-top: 41px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 40px;
+		padding-top: 38px;
+		border-top: 1px solid #e5e7eb;
+		justify-content: center;
 	}
 }
 
@@ -148,6 +163,10 @@
 	@include main-text-font(24, 600, 1, #005958);
 	text-decoration: none;
 	display: inline-block;
+
+	@media screen and (max-width: 531px) {
+		padding-left: 3px;
+	}
 }
 
 .callLabel {
@@ -184,6 +203,12 @@
 	@media screen and (max-width: 588px) {
 		margin-top: 20px;
 	}
+
+	@media screen and (max-width: 531px) {
+		max-width: 136px;
+		flex-wrap: wrap;
+		row-gap: 20px;
+	}
 }
 
 .socialListItem {
@@ -218,4 +243,20 @@
 	@include main-text-font(12, 400, 1.33, #80899e);
 	margin: 0;
 	padding: 0;
+
+	@media screen and (max-width: 943px) {
+		text-align: right;
+		max-width: 641px;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: -0.32px;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 12px;
+		line-height: 1.33;
+		letter-spacing: normal;
+		max-width: 257px;
+		text-align: center;
+	}
 }
