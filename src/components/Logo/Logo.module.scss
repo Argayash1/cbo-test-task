@@ -52,4 +52,8 @@
 	width: 64.05px;
 	height: 24px;
 	padding: 0;
+
+	@media screen and (max-width: 943px) {
+		display: none;
+	}
 }

@@ -18,7 +18,7 @@ export const Footer = () => {
 	))
 
 	const socialListItems = socialItems.map((item, index) => (
-		<li key={index}>
+		<li key={index} className={styles.socialListItem}>
 			<a href={item.link}>
 				<div
 					className={styles.socialIcon}
