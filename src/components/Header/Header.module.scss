@@ -49,6 +49,11 @@
 .phone {
 	@include main-text-font(16, 600, 1.5, #005958);
 	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+
+	&:hover {
+		color: #0c999c;
+	}
 
 	@media screen and (max-width: 884px) {
 		display: none;

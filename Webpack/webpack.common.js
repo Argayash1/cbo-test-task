@@ -82,6 +82,7 @@ module.exports = {
 	plugins: [
 		new HTMLWebpackPlugins({
 			template: path.resolve(__dirname, '..', './public/index.html'), //путь до папки public изменился
+			favicon: path.resolve(__dirname, '..', './public/favicon.ico'),
 		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({

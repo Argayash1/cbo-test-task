@@ -4,7 +4,11 @@ import styles from './TopMenu.module.scss'
 
 export const TopMenu = () => {
 	const topMenuListItems = topMenuItems.map((item, index) => (
-		<li key={index}>{item}</li>
+		<li key={index}>
+			<a href='/' className={styles.menuLink}>
+				{item}
+			</a>
+		</li>
 	))
 
 	return (

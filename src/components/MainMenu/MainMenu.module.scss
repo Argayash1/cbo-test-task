@@ -1,11 +1,6 @@
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
-.root {
-}
-
 .list {
-	@include main-text-font(14, 500, 1.71, #fff);
-
 	display: flex;
 	gap: 16px;
 	margin: 0;
@@ -18,7 +13,18 @@
 	height: 24px;
 }
 
-.menuItemTypeFirst {
+.navLink {
+	@include main-text-font(14, 500, 1.71, #fff);
+	text-decoration: none;
+	display: inline-block;
+	transition: opacity 0.3s ease-in-out;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.navLinkTypeFirst {
 	display: flex;
 }
 

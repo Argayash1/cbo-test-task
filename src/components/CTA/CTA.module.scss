@@ -11,6 +11,11 @@
 	grid-row: 5/6;
 	width: 267px;
 	height: 56px;
+	transition: opacity 0.3s ease-in-out;
+
+	&:not(.rootTypeHeader, .rootTypeLead):hover {
+		opacity: 0.8;
+	}
 
 	@media screen and (max-width: 986px) {
 		&:not(
@@ -40,11 +45,20 @@
 
 .rootTypeHeader {
 	background-color: #0c999c;
+	border-radius: 4px;
 	font-size: 14px;
 	line-height: 1.7;
 	padding: 4px 16px;
 	width: 181px;
 	height: 32px;
+	transition:
+		color 0.3s ease-in-out,
+		background-color 0.3s ease-in-out;
+
+	&:hover {
+		color: #0c999c;
+		background-color: #fff;
+	}
 }
 
 .rootTypeLead {
@@ -61,6 +75,15 @@
 	height: auto;
 	position: relative;
 	top: -1px;
+
+	transition:
+		color 0.3s ease-in-out,
+		background-color 0.3s ease-in-out;
+
+	&:hover {
+		color: #fff;
+		background-color: #0c999c;
+	}
 }
 
 .rootTypeCentered {

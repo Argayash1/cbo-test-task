@@ -8,7 +8,9 @@ interface IBreadCrumbsProps {
 export const BreadCrumbs = ({ pathNames }: IBreadCrumbsProps) => {
 	const pathNamesListItems = pathNames.map((pathName, index) => (
 		<li key={index}>
-			{pathName}
+			<a href='/' className={styles.crumbLink}>
+				{pathName}
+			</a>
 			<span className={styles.crumbSpan}>/</span>
 		</li>
 	))

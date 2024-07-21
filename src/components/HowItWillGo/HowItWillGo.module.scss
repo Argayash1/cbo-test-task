@@ -1,4 +1,5 @@
 @import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
 	background-color: #fff;
@@ -35,6 +36,10 @@
 	}
 }
 
+.photoListItem {
+	position: relative;
+}
+
 .photo {
 	width: 672px;
 	height: 401px;
@@ -49,5 +54,35 @@
 	@media screen and (max-width: 531px) {
 		width: 270px;
 		height: 295px;
+	}
+}
+
+.textOnPhoto {
+	@include main-text-font(20, 500, 1.5, #fff);
+
+	position: absolute;
+	bottom: 33px;
+	left: 50px;
+	max-width: 571px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+
+	@media screen and (max-width: 986px) {
+		font-size: 18px;
+		line-height: 1.38;
+		left: 26px;
+		bottom: 28px;
+		max-width: 427px;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 16px;
+		line-height: 1.43;
+		letter-spacing: -0.32px;
+		font-weight: 600;
+		max-width: 240px;
+		bottom: 24px;
+		left: 15px;
 	}
 }

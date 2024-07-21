@@ -163,6 +163,11 @@
 	@include main-text-font(24, 600, 1, #005958);
 	text-decoration: none;
 	display: inline-block;
+	transition: color 0.3s ease-in-out;
+
+	&:hover {
+		color: #0c999c;
+	}
 
 	@media screen and (max-width: 531px) {
 		padding-left: 3px;

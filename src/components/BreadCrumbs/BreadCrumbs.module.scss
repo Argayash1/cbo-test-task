@@ -11,12 +11,16 @@
 }
 
 .list {
-	@include main-text-font(14, 400, 1.71, #0c999c);
-
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
+}
+
+.crumbLink {
+	@include main-text-font(14, 400, 1.71, #0c999c);
+	text-decoration: none;
+	display: inline-block;
 }
 
 .crumbSpan {

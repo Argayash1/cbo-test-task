@@ -3,10 +3,6 @@
 
 .root {
 	background-color: rgba(128, 137, 158, 0.12);
-
-	@media screen and (max-width: 986px) {
-		background-color: rgba(128, 137, 158, 0.22);
-	}
 }
 
 .container {
@@ -15,9 +11,9 @@
 	display: grid;
 	grid-template-columns: 1fr auto;
 	grid-template-rows: 196px 43px auto 110px 187px;
-	background-image: url('../../assets/images/lead-background.jpg');
+	background-image: url('../../assets/images/lead-background-1.png');
 	background-repeat: no-repeat;
-	background-position: 100% 0;
+	background-position: 265% 0;
 	position: relative;
 	overflow: hidden;
 
@@ -38,8 +34,7 @@
 		flex-direction: column;
 		padding-top: 90px;
 		background-image: url('../../assets/images/lead-tablet-background.png');
-		background-position: 4% 100%;
-		background-size: 850px 514px;
+		background-position: 0 100%;
 	}
 
 	@media screen and (max-width: 560px) {
@@ -160,7 +155,7 @@
 	position: relative;
 
 	@media screen and (max-width: 986px) {
-		height: 569px;
+		height: 568.39px;
 	}
 
 	@media screen and (max-width: 720px) {

@@ -2,7 +2,7 @@
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
-	background-color: #004241;
+	background-image: linear-gradient(90deg, #004241, #045c5e);
 	border-radius: 30px;
 
 	@media screen and (max-width: 986px) {
@@ -10,6 +10,7 @@
 		padding-left: 31px;
 		padding-right: 30px;
 		background-color: #fff;
+		background-image: none;
 		border-radius: 0;
 	}
 
@@ -23,6 +24,22 @@
 	@include section-flex-container(75, 120, 75);
 	min-height: 594px;
 	font-size: 0;
+	position: relative;
+	overflow: hidden;
+
+	&::after {
+		content: '';
+		width: 595px;
+		height: 562px;
+		background-image: url('../../assets/images/target-audience-background.svg');
+		position: absolute;
+		bottom: -64px;
+		right: -367px;
+
+		@media screen and (max-width: 986px) {
+			display: none;
+		}
+	}
 
 	@media screen and (max-width: 1360px) {
 		padding-inline: 70px;
@@ -38,7 +55,7 @@
 	}
 
 	@media screen and (max-width: 986px) {
-		background-color: #004241;
+		background-image: linear-gradient(90deg, #005958, #0c999c);
 		border-radius: 15px;
 	}
 
@@ -73,7 +90,7 @@
 	margin: 50px 0 48px;
 
 	@media screen and (max-width: 986px) {
-		margin-top: 41px;
+		margin-top: 40px;
 		margin-bottom: 40px;
 		gap: 15px;
 	}

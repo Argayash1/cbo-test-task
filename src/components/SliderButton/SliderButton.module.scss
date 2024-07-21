@@ -14,9 +14,11 @@
 	right: 8.26%;
 	z-index: 3;
 	cursor: pointer;
-	transition:
-		visibility 0.4s ease-in-out,
-		opacity 0.4s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+
+	&:hover {
+		opacity: 0.8;
+	}
 
 	@media screen and (max-width: 1360px) {
 		&:not(.rootTypeAboutPracticum, .rootTypeLeftAboutPracticum) {
@@ -43,6 +45,9 @@
 	background-size: auto;
 	background-position: center;
 	margin-right: 21px;
+	transition:
+		background-color 0.3s ease-in-out,
+		background-image 0.3s ease-in-out;
 
 	&:disabled {
 		background-color: #fff;

@@ -5,18 +5,20 @@ import clsx from 'clsx'
 
 export const MainMenu = () => {
 	const mainMenuListItems = mainMenuItems.map((item, index) => (
-		<li
-			key={index}
-			className={clsx(styles.menuItem, {
-				[styles.menuItemTypeFirst]: index === 0,
-			})}
-		>
-			{item}
-			{index === 0 && <span className={styles.arrowIcon}></span>}
+		<li key={index} className={styles.menuItem}>
+			<a
+				href='/'
+				className={clsx(styles.navLink, {
+					[styles.navLinkTypeFirst]: index === 0,
+				})}
+			>
+				{item}
+				{index === 0 && <span className={styles.arrowIcon}></span>}
+			</a>
 		</li>
 	))
 	return (
-		<nav className={styles.root}>
+		<nav>
 			<ul className={styles.list}>{mainMenuListItems}</ul>
 		</nav>
 	)

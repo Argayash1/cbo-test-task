@@ -10,6 +10,7 @@ import photo2 from '../../assets/images/hoitwilgo-photo2.jpg'
 import photo3 from '../../assets/images/hoitwilgo-photo3.jpg'
 import styles from './HowItWillGo.module.scss'
 import useResize from '../../hooks/useResize'
+import { hoItWillGoItems } from '../../utils/hoItWillGoItems'
 
 const photos = [
 	{ image: photo1, altText: 'Фото 1' },
@@ -31,8 +32,9 @@ export const HowItWillGo = () => {
 	}
 
 	const photoListItems = photos.map((photo, index) => (
-		<li key={index}>
+		<li key={index} className={styles.photoListItem}>
 			<img src={photo.image} alt={photo.altText} className={styles.photo} />
+			<p className={styles.textOnPhoto}>{hoItWillGoItems[index]}</p>
 		</li>
 	))
 	const initialSliderOffset = screenWidth > 531 ? 50 : 50.7
