@@ -101,10 +101,32 @@
 	}
 }
 
-.inputTypeCheckbox {
+.checkboxInvisible {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	clip-path: inset(0 0 0 0);
+}
+
+.checkboxInvisible + .checkboxVisible {
+	display: inline-block;
 	width: 24px;
 	height: 24px;
-	margin: 0;
-	padding: 0;
-	flex-shrink: 0;
+	background-color: transparent;
+	cursor: pointer;
+	border: 1px solid #667085;
+	border-radius: 2px;
+	transition:
+		opacity 0.5s,
+		background-image 0.2s linear;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.checkboxInvisible:checked + .checkboxVisibleTypeChecked {
+	background-image: url('../../assets/images/feedbackform-checked-icon.svg');
+	background-position: center;
 }

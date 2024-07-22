@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './FeedbackForm.module.scss'
+import clsx from 'clsx'
 
 export const FeedbackForm = () => {
 	return (
@@ -41,8 +42,14 @@ export const FeedbackForm = () => {
 					type='checkbox'
 					id='agreeInput'
 					required
-					className={styles.inputTypeCheckbox}
+					className={styles.checkboxInvisible}
 				/>
+				<span
+					className={clsx(
+						styles.checkboxVisible,
+						styles.checkboxVisibleTypeChecked
+					)}
+				></span>
 				Согласен с политикой обработки персональных данных
 			</label>
 		</form>
