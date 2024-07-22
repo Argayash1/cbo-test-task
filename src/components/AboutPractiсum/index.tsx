@@ -8,7 +8,7 @@ export const AboutPractiсum = () => {
 	const screenWidth = useResize()
 	const [switchCount, setSwitchCount] = React.useState<number>(0)
 
-	const nextButtonDisabled = switchCount >= 2
+	const nextButtonDisabled = aboutPracticumCards.length - switchCount <= 1
 
 	const cardListItems = aboutPracticumCards.map((card, index) => (
 		<li key={index}>

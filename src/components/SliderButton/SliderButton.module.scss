@@ -41,18 +41,26 @@
 	height: 56px;
 	border-radius: 26px;
 	background-color: #0c999c;
-	background-image: url('../../assets/images/about-practicum-arrow-right.png');
+	background-image: none;
 	background-size: auto;
 	background-position: center;
 	margin-right: 21px;
-	transition:
-		background-color 0.3s ease-in-out,
-		background-image 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
 
 	&:disabled {
 		background-color: #fff;
-		background-image: url('../../assets/images/about-practicum-arrow-left-disabled.png');
-		transform: rotateY(180deg);
+
+		svg {
+			path {
+				stroke: #667085;
+			}
+		}
+	}
+
+	svg {
+		path {
+			transition: stroke 0.3s ease-in-out;
+		}
 	}
 
 	@media screen and (max-width: 531px) {
@@ -66,10 +74,6 @@
 .rootTypeLeft {
 	transform: rotateY(180deg);
 	left: 15.625%;
-
-	&:not(:not(.rootTypeAboutPracticum)):disabled {
-		transform: rotateY(0);
-	}
 
 	@media screen and (max-width: 1360px) {
 		left: 7.812%;

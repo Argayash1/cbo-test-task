@@ -401,6 +401,19 @@
 	height: 457px;
 	bottom: -17px;
 	right: -239px;
+
+	@media screen and (max-width: 986px) {
+		width: 425px;
+		height: 399px;
+		bottom: 30px;
+		right: -254px;
+		background-size: contain;
+		transform: rotate(-20deg);
+	}
+
+	@media screen and (max-width: 531px) {
+		display: none;
+	}
 }
 
 .icon {

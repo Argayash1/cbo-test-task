@@ -88,7 +88,12 @@ export const ActivityCard = ({
 			)}
 			{!subtitle && (
 				<>
-					<CTA path='#' linkText='Скачать программу' type='practice-activity' />
+					<CTA
+						path='#'
+						linkText='Скачать программу'
+						type='practice-activity'
+						linkType='download'
+					/>
 					<div className={styles.fourthCardFigure}></div>
 				</>
 			)}

@@ -44,7 +44,7 @@ export const HowItWillGo = () => {
 			: screenWidth <= 986 && screenWidth > 531
 				? 507
 				: 285
-	const nextButtonDisabled = switchCount >= 2
+	const nextButtonDisabled = photos.length - switchCount <= 1
 
 	return (
 		<section className={styles.root}>
