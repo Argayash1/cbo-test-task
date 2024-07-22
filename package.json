@@ -1,4 +1,5 @@
 {
+	"homepage": "https://argayash1.github.io/cbo-test-task/",
 	"name": "cbo-test-task",
 	"version": "1.0.0",
 	"main": "index.js",
@@ -12,6 +13,8 @@
 		"check": "npm run stylelint:fix && npm run lint && npm run format",
 		"commit": "npm run check && cz",
 		"prepare": "husky install",
+		"deploy": "gh-pages -d dist",
+		"predeploy": "npm run build",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
@@ -41,6 +44,7 @@
 		"eslint-plugin-prettier": "^5.1.3",
 		"eslint-plugin-react": "^7.34.3",
 		"eslint-plugin-react-hooks": "^4.6.2",
+		"gh-pages": "^6.1.1",
 		"html-webpack-plugin": "^5.6.0",
 		"husky": "^9.0.11",
 		"lint-staged": "^15.2.7",
