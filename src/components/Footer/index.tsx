@@ -18,13 +18,17 @@ export const Footer = () => {
 
 	const cboListItems = cboItems.map((item, index) => (
 		<li key={index} className={styles.listItem}>
-			{item}
+			<a href='/' className={styles.listItemLink}>
+				{item}
+			</a>
 		</li>
 	))
 
 	const infoListItems = infoItems.map((item, index) => (
 		<li key={index} className={clsx(styles.listItem, styles.listItemTypeInfo)}>
-			{item}
+			<a href='/' className={styles.listItemLink}>
+				{item}
+			</a>
 		</li>
 	))
 

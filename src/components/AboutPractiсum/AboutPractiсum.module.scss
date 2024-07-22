@@ -1,8 +1,5 @@
 @import '../../assets/styles/mixins/section-flex-container';
 
-.root {
-}
-
 .container {
 	@include section-flex-container(96, 0, 94, 90);
 

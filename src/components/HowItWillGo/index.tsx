@@ -33,7 +33,12 @@ export const HowItWillGo = () => {
 
 	const photoListItems = photos.map((photo, index) => (
 		<li key={index} className={styles.photoListItem}>
-			<img src={photo.image} alt={photo.altText} className={styles.photo} />
+			<img
+				src={photo.image}
+				alt={photo.altText}
+				className={styles.photo}
+				loading='lazy'
+			/>
 			<p className={styles.textOnPhoto}>{hoItWillGoItems[index]}</p>
 		</li>
 	))

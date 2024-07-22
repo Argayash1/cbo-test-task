@@ -1,7 +1,7 @@
-import photo1 from '../assets/images/about-practicum-photo1.jpg'
-import photo2 from '../assets/images/about-practicum-photo2.jpg'
-import photo3 from '../assets/images/about-practicum-photo3.jpg'
-import photo4 from '../assets/images/about-practicum-photo4.jpg'
+import photo1 from '../assets/images/about-practicum-photo1.png'
+import photo2 from '../assets/images/about-practicum-photo2.png'
+import photo3 from '../assets/images/about-practicum-photo3.png'
+import photo4 from '../assets/images/about-practicum-photo4.png'
 
 export const aboutPracticumCards = [
 	{

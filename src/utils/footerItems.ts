@@ -28,6 +28,9 @@ export const socialItems = [
 	{ icon: facebookIcon, link: '#' },
 	{ icon: twitterIcon, link: '#' },
 	{ icon: mediumIcon, link: '#' },
-	{ icon: tgIcon, link: '#' },
-	{ icon: youTubeIcon, link: '#' },
+	{ icon: tgIcon, link: 'https://t.me/CBO_RU_Bot?start=f-cboru_m-cboru' },
+	{
+		icon: youTubeIcon,
+		link: 'https://www.youtube.com/@CboRu_education/featured',
+	},
 ]

@@ -14,6 +14,7 @@ export const FeedbackForm = () => {
 				placeholder='Укажите ваше ФИО полностью'
 				required
 				className={styles.input}
+				name='name'
 			/>
 
 			<label htmlFor='phoneInput' className={styles.label}>
@@ -25,6 +26,7 @@ export const FeedbackForm = () => {
 				placeholder='+7'
 				required
 				className={styles.input}
+				name='phone'
 			/>
 
 			<label htmlFor='emailInput' className={styles.label}>
@@ -36,6 +38,7 @@ export const FeedbackForm = () => {
 				placeholder='example@email.com'
 				required
 				className={styles.input}
+				name='email'
 			/>
 			<label htmlFor='agreeInput' className={styles.checkboxLabel}>
 				<input
@@ -43,6 +46,7 @@ export const FeedbackForm = () => {
 					id='agreeInput'
 					required
 					className={styles.checkboxInvisible}
+					name='checkbox'
 				/>
 				<span
 					className={clsx(

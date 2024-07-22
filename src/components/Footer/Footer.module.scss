@@ -96,7 +96,6 @@
 }
 
 .listItem {
-	@include main-text-font(16, 500, 1.5, #005958);
 	min-width: max-content;
 
 	&:nth-child(2) {
@@ -127,6 +126,16 @@
 	width: 252px;
 }
 
+.listItemLink {
+	@include main-text-font(16, 500, 1.5, #005958);
+	text-decoration: none;
+	display: inline-block;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 .infoList {
 	list-style: none;
 	margin: 0;
@@ -142,7 +151,7 @@
 	align-items: center;
 	margin-top: 32px;
 	border-top: 1px solid #e5e7eb;
-	padding-top: 33px;
+	padding-top: 32px;
 
 	@media screen and (max-width: 943px) {
 		align-items: flex-start;
@@ -238,6 +247,10 @@
 .reasonsLink {
 	@include main-text-font(16, 500, 1.5, #005958);
 	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
 
 	@media screen and (max-width: 943px) {
 		display: none;

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './AboutAuthor.module.scss'
 import { SectionTitle, SectionSubtitle } from '../../components'
 import { competenciesItems } from '../../utils/competenciesItems'
-import authorsPhoto from '../../assets/images/about-author-photo-1.png'
+import authorsPhoto from '../../assets/images/about-author-photo.png'
 import authorsPhotoTablet from '../../assets/images/about-author-tablet-photo.png'
 import useResize from '../../hooks/useResize'
 
@@ -39,6 +39,7 @@ export const AboutAuthor = () => {
 					}
 					alt='Фото Демида Голикова - автора семинара-практикума'
 					className={styles.authorPhoto}
+					loading='lazy'
 				/>
 			</div>
 		</section>

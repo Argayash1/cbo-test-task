@@ -9,6 +9,7 @@ export const SpecialistCard = () => {
 				src={specialistPhoto}
 				alt='Фото ведущегшо специалиста Бизнес-школы ЦБО Надежды Шуравиной'
 				className={styles.photo}
+				loading='lazy'
 			/>
 			<h3 className={styles.name}>Шуравина Надежда</h3>
 			<p className={styles.job}>Ведущий специалист Бизнес-школы&nbsp;ЦБО</p>

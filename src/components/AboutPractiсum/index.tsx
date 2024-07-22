@@ -12,7 +12,7 @@ export const AboutPractiсum = () => {
 
 	const cardListItems = aboutPracticumCards.map((card, index) => (
 		<li key={index}>
-			<AboutPracticumCard {...card} />
+			<AboutPracticumCard {...card} index={index} />
 		</li>
 	))
 
